@@ -11,6 +11,10 @@
     {% if chart %}
     <img src="data:image/png;base64, {{chart|safe}}">
     {% endif %}
+
+    {% for club in clubs %}
+    <div><a href="/clubs/{{club}}">{{ club }}</a></div>
+    {% endfor %}
 </body>
 
 </html>

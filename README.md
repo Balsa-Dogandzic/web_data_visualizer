@@ -24,7 +24,11 @@ https://colab.research.google.com/drive/1Szd1rwLyXHtKhw2lJZUYXxPkQewMyVBP?usp=sh
 
 U nastavku su screenshot-ovi web sajta:
 
-![alt text](https://github.com/Balsa-Dogandzic/web_data_visualizer/blob/main/docs/Prva%20verzija.png?raw=True)
+![alt text](https://github.com/Balsa-Dogandzic/web_data_visualizer/blob/main/docs/Pocetna.png?raw=True)
+
+![alt text](https://github.com/Balsa-Dogandzic/web_data_visualizer/blob/main/docs/Klubovi.png?raw=True)
+
+![alt text](https://github.com/Balsa-Dogandzic/web_data_visualizer/blob/main/docs/Klubovi.png?raw=True)
 
 ### TODO
 

@@ -12,14 +12,11 @@ def get_graph():
     buffer.close()
     return graph
 
-def get_plot(x, y):
+def get_barplot(x, y):
     plt.switch_backend("AGG")
     plt.figure(figsize = (10, 5))
-    plt.title("Golovi u ligi sampiona")
-    plt.xlabel("Igrac")
-    plt.ylabel("Broj golova")
-    plt.xticks(rotation=45)
-    plt.plot(x, y)
+    plt.title("Golovi u Ligi šampiona")
+    plt.bar(x, y)
     plt.tight_layout()
     graph = get_graph()
     return graph
