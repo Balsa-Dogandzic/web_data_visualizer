@@ -1,0 +1,66 @@
+Ocjene igraca:
+Pappalardo, L., Cintia, P., Ferragina, P., Massucco, E., Pedreschi, D., & Giannotti, F. (2019). PlayeRank: data-driven performance evaluation and player ranking in soccer via a machine learning approach. ACM Transactions on Intelligent Systems and Technology (TIST), 10(5), 1-27.
+Link: https://dl.acm.org/doi/abs/10.1145/3343172
+
+Fudbalska analiza:
+Decroos, T., Dzyuba, V., Van Haaren, J., & Davis, J. (2017, February). Predicting soccer highlights from spatio-temporal match event streams. In Proceedings of the AAAI Conference on Artificial Intelligence (Vol. 31, No. 1).
+Link: https://ojs.aaai.org/index.php/AAAI/article/view/10754
+
+Knjiga Django za pocetnike:
+Vincent, W. S. (2022). Django for Beginners: Build websites with Python and Django. WelcomeToCode.
+Link:https://books.google.me/books?hl=sr&lr=&id=GVxwDwAAQBAJ&oi=fnd&pg=PT9&dq=Django+for+Beginners:+Build+websites+with+Python&ots=fvtoocJlWW&sig=9mbGvrKX0HFN7ojQonFstJEbfLo&redir_esc=y#v=onepage&q=Django%20for%20Beginners%3A%20Build%20websites%20with%20Python&f=false
+
+Analiza podataka u Python-u:
+Wes McKinney, Python for Data Analysis, 2nd Edition.
+Link: https://books.google.me/books?hl=sr&lr=&id=EAKBEAAAQBAJ&oi=fnd&pg=PP30&dq=Wes+McKinney,+Python+for+Data+Analysis,+2nd+Edition.&ots=PI0rOq7e40&sig=wUQN20-87RkKxlZ1SjkuUCeg-gU&redir_esc=y#v=onepage&q=Wes%20McKinney%2C%20Python%20for%20Data%20Analysis%2C%202nd%20Edition.&f=false
+
+Django dokumentacija:
+Django Software Foundation. (2019). Django. Retrieved from https://djangoproject.com
+Link: https://www.djangoproject.com/
+
+Pandas dokumentacija:
+McKinney, W., & others. (2010). Data structures for statistical computing in python. In Proceedings of the 9th Python in Science Conference (Vol. 445, pp. 51–56).
+Link: https://pandas.pydata.org/
+
+Matplotlib dokumentacija:
+Hunter, J. D. (2007). Matplotlib: A 2D graphics environment. Computing in Science &amp; Engineering, 9(3), 90–95.
+Link: https://matplotlib.org/
+
+Data science:
+Python Data Science Handbook" by Jake VanderPlas
+
+Aplikacije sa Matplotlib-om
+Root, B. V. (2015). Interactive applications using matplotlib. Packt Publishing Ltd.
+Link: https://books.google.me/books?hl=sr&lr=&id=ZfeeBwAAQBAJ&oi=fnd&pg=PP1&dq=Interactive+Applications+Using+Matplotlib&ots=82m705zXy8&sig=Z0DFiQpYtsKERVwYZ5IQ60byRn4&redir_esc=y#v=onepage&q=Interactive%20Applications%20Using%20Matplotlib&f=false
+
+Analiza igraca:
+García-Aliaga, A., Marquina, M., Coteron, J., Rodriguez-Gonzalez, A., & Luengo-Sanchez, S. (2021). In-game behaviour analysis of football players using machine learning techniques based on player statistics. International Journal of Sports Science & Coaching, 16(1), 148-157.
+Link: https://journals.sagepub.com/doi/full/10.1177/1747954120959762
+
+Rangiranje igraca:
+Ranking Players by DEA: An analysis of Czech and Danish football
+Link: https://www.researchgate.net/publication/362420836_Ranking_Players_by_DEA_An_analysis_of_Czech_and_Danish_football
+
+Evaluacija performansi igraca:
+Evaluating performance and ranking players in soccer with PlayeRank
+Link: https://www.researchgate.net/publication/335929257_Evaluating_performance_and_ranking_players_in_soccer_with_PlayeRank
+
+Snage timova u Ligi sampiona:
+Measuring the strengths of the teams in the UEFA Champions League
+Link: https://www.researchgate.net/publication/370103621_Measuring_the_strengths_of_the_teams_in_the_UEFA_Champions_League
+
+Matplotlib na Django-u:
+Tosi, S. (2009). Matplotlib for Python developers. Packt Publishing Ltd.
+Link: https://books.google.me/books?hl=sr&lr=&id=8Fs3AgAAQBAJ&oi=fnd&pg=PT10&dq=matplotlib+on+the+web&ots=i0tJlc7PXu&sig=Zvdal_o9NBPv7T_7AYmMDUlGiCo&redir_esc=y#v=onepage&q=matplotlib%20on%20the%20web&f=false
+
+Biblioteke za vizualizaciju na web-u:
+Barnard, L., & Mertik, M. (2015). Usability of visualization libraries for web browsers for use in scientific analysis. International Journal of Computer Applications, 121(1).
+Link: https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=8d2ca9fa2abee14ef07e206d8ac2393454b2263c
+
+Seaborn papir:
+Waskom, M. L. (2021). Seaborn: statistical data visualization. Journal of Open Source Software, 6(60), 3021.
+Link: https://joss.theoj.org/papers/10.21105/joss.03021.pdf
+
+Komparativna analiza Matplotlib i Seaborn:
+Sial, A. H., Rashdi, S. Y. S., & Khan, A. H. (2021). Comparative analysis of data visualization libraries Matplotlib and Seaborn in Python. International Journal, 10(1).
+Link: https://d1wqtxts1xzle7.cloudfront.net/65736020/ijatcse391012021-libre.pdf?1613836209=&response-content-disposition=inline%3B+filename%3DComparative_Analysis_of_Data_Visualizati.pdf&Expires=1691055330&Signature=a3W1HeF5ipJKB57-TvmGz~5VPhNh~obZf0jEC~yJowQQYEzrunIYLPytb9j83EYMOsG-M8jqnpyCNA45sSdxGLhIIH8sX27o3l-LOCp9TM9wO6HQYVuyuLz5h52qhWHXnMKaILTNUzGyDsa77s5dzrmC6RcQ9QV8YFaQExr-FU6FZVttByWbXpmWGybdR0rghZns1Hzk0sFSWZygphtDa9TXViDugGRTi1zrh5WjMJVHNJqyO2O~6s1AbpUQiyOltCxSX~bhdUbOLArUKMZzhKNN6G2uxSDTFa37osi7QT0hHtiX5hiU9KH15sfLToq4IjGJ9eC-6Cy-b4S6yQIiKA__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA
