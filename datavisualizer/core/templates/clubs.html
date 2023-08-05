@@ -9,6 +9,20 @@
 
 <body>
     <h1>Klubovi</h1>
+    {% for club in clubs.itertuples %}
+    <a href="/clubs/{{club.Index}}" style="margin-left: 20px;">{{club.Index}}</a>
+    {% endfor %}
+
+    <h1>Najbolji klub</h1>
+    {% for club in best_club.itertuples %}
+    <h2>{{club.Index}}</h2>
+    <p>Broj golova je nevjerovatnih {{ club.Golovi }}</p>
+    {% endfor %}
+
+    {% if graph %}
+    <img src="data:image/png;base64, {{graph|safe}}" style="width: 500px">
+    {% endif %}
+
 </body>
 
 </html>

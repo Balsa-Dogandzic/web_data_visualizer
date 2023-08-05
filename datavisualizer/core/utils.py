@@ -20,3 +20,11 @@ def get_barplot(x, y):
     plt.tight_layout()
     graph = get_graph()
     return graph
+
+def get_pieplot(x, y):
+    plt.switch_backend("AGG")
+    plt.title("Najuspješniji klubovi")
+    plt.pie(x, labels = y, startangle=90)
+    plt.tight_layout()
+    graph = get_graph()
+    return graph
