@@ -14,13 +14,13 @@
     {% endfor %}
 
     <h1>Najbolji klub</h1>
-    {% for club in best_club.itertuples %}
-    <h2>{{club.Index}}</h2>
-    <p>Broj golova je nevjerovatnih {{ club.Golovi }}</p>
-    {% endfor %}
+
+    <h2>{{best_club.name}}</h2>
+    <p>Broj golova je nevjerovatnih {{ best_club.Golovi }}, a ukupan broj asistencija igraca je
+        {{ best_club.Asistencije }}</p>
 
     {% if graph %}
-    <img src="data:image/png;base64, {{graph|safe}}" style="width: 500px">
+    <img src="data:image/png;base64, {{graph|safe}}">
     {% endif %}
 
 </body>

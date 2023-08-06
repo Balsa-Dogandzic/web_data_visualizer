@@ -1,6 +1,7 @@
 import base64
 import matplotlib.pyplot as plt
 from io import BytesIO
+import numpy as np
 
 def get_graph():
     buffer = BytesIO()
@@ -12,19 +13,35 @@ def get_graph():
     buffer.close()
     return graph
 
-def get_barplot(x, y):
+def top10_players(x, y):
     plt.switch_backend("AGG")
-    plt.figure(figsize = (10, 5))
-    plt.title("Golovi u Ligi šampiona")
+    plt.figure(figsize = (12, 5))
+    plt.title("Najbolji strijelci u Ligi šampiona", loc='left')
     plt.bar(x, y)
     plt.tight_layout()
     graph = get_graph()
     return graph
 
-def get_pieplot(x, y):
+def top10_clubs(x, y, z):
     plt.switch_backend("AGG")
-    plt.title("Najuspješniji klubovi")
-    plt.pie(x, labels = y, startangle=90)
+    plt.figure(figsize = (12, 5))
+    plt.title("Najbolji klubovi", loc='left')
+    x_axis = np.arange(len(x))
+    plt.bar(x_axis - 0.2, y, 0.4, label="Golovi")
+    plt.bar(x_axis + 0.2, z, 0.4, label="Asistencije")
+    plt.xticks(x_axis, x)
+    plt.legend()
+    plt.tight_layout()
+    graph = get_graph()
+    return graph
+
+def club_performance(x, y, z, klub):
+    plt.switch_backend("AGG")
+    plt.figure(figsize = (12, 5))
+    plt.title("Rezultati kluba u odnosu na prosjek", loc='left')
+    plt.plot(x, y, label=klub)
+    plt.plot(x, z, label="Prosjek")
+    plt.legend()
     plt.tight_layout()
     graph = get_graph()
     return graph
