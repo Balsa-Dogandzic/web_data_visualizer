@@ -28,7 +28,7 @@ U nastavku su screenshot-ovi web sajta:
 
 ![alt text](https://github.com/Balsa-Dogandzic/web_data_visualizer/blob/main/docs/Klubovi.png?raw=True)
 
-![alt text](https://github.com/Balsa-Dogandzic/web_data_visualizer/blob/main/docs/Klubov.png?raw=True)
+![alt text](https://github.com/Balsa-Dogandzic/web_data_visualizer/blob/main/docs/Klub.png?raw=True)
 
 ![alt text](https://github.com/Balsa-Dogandzic/web_data_visualizer/blob/main/docs/Igraci.png?raw=True)
 
