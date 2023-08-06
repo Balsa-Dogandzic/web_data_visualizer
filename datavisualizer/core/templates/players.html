@@ -4,11 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Igrači</title>
 </head>
 
 <body>
-    <h1>Igraci</h1>
+    <h1>Najbolji igrač</h1>
+    <hr>
+    <h2>Najbolji strijelci</h2>
+    {% if chart %}
+    <img src="data:image/png;base64, {{chart|safe}}">
+    {% endif %}
+    <hr>
 </body>
 
 </html>

@@ -16,7 +16,6 @@ def get_graph():
 def top10_players(x, y):
     plt.switch_backend("AGG")
     plt.figure(figsize = (12, 5))
-    plt.title("Najbolji strijelci u Ligi šampiona", loc='left')
     plt.bar(x, y)
     plt.tight_layout()
     graph = get_graph()
@@ -25,7 +24,6 @@ def top10_players(x, y):
 def top10_clubs(x, y, z):
     plt.switch_backend("AGG")
     plt.figure(figsize = (12, 5))
-    plt.title("Najbolji klubovi", loc='left')
     x_axis = np.arange(len(x))
     plt.bar(x_axis - 0.2, y, 0.4, label="Golovi")
     plt.bar(x_axis + 0.2, z, 0.4, label="Asistencije")
@@ -37,8 +35,7 @@ def top10_clubs(x, y, z):
 
 def club_performance(x, y, z, klub):
     plt.switch_backend("AGG")
-    plt.figure(figsize = (12, 5))
-    plt.title("Rezultati kluba u odnosu na prosjek", loc='left')
+    plt.figure(figsize = (10, 5))
     plt.plot(x, y, label=klub)
     plt.plot(x, z, label="Prosjek")
     plt.legend()

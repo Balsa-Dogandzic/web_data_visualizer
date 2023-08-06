@@ -2,6 +2,7 @@ from django.shortcuts import render, HttpResponse
 from .utils import top10_players, top10_clubs, club_performance
 import pandas as pd
 
+
 def index(request):
     """Funkcija za pocetnu stranicu"""
     df = pd.read_csv("static/cl_goals.csv")
@@ -14,6 +15,7 @@ def index(request):
     clubs = df['Klub'].unique()
 
     return render(request, 'index.html', {'chart':chart, 'clubs':clubs})
+
 
 def clubs(request):
     """Funkcija za stranicu o klubovima"""
@@ -31,21 +33,38 @@ def clubs(request):
 
     return render(request, 'clubs.html', {'clubs':clubs, 'best_club':best_club, 'graph':graph})
 
+
 def club(request, club):
     """Funkcija za stranicu o pojedinacnom klubu"""
     df = pd.read_csv("static/cl_goals.csv")
-    df_mean = df[['Broj_mečeva', 'Golovi', 'Asistencije', 'Broj_faulova', 'Šutevi']].mean()
+    all_clubs = df.groupby(["Klub"]).sum()
+
+    try:
+        club_data = all_clubs.loc[club]
+    except:
+        return render(request, "error_pages/404.html")
+    clubs_mean = all_clubs[['Broj_mečeva', 'Golovi', 'Asistencije', 'Broj_faulova', 'Šutevi']].mean()
     players = df[df["Klub"] == club]
-    club_mean = players[['Broj_mečeva', 'Golovi', 'Asistencije', 'Broj_faulova', 'Šutevi']].mean()
-    x = club_mean.index
-    y = club_mean
-    z = df_mean
+
+    x = ['Broj mečeva', 'Golovi', 'Asistencije', 'Broj faulova', 'Šutevi']
+    y = club_data[['Broj_mečeva', 'Golovi', 'Asistencije', 'Broj_faulova', 'Šutevi']]
+    z = clubs_mean
     graph = club_performance(x, y, z, club)
-    return render(request, 'club.html', {'club':club, 'players':players, "graph":graph})
+
+    return render(request, 'club.html', {'club':club_data, 'players':players, "graph":graph})
+
 
 def players(request):
     """Funkcija za stranicu o igracima"""
-    return render(request, 'players.html')
+    df = pd.read_csv("static/cl_goals.csv")
+    df = df.sort_values(by='Golovi', ascending=False)
+
+    x = df.head(10)['Igrač']
+    y = df.head(10)['Golovi']
+    chart = top10_players(x, y)
+    
+    return render(request, 'players.html', {"chart":chart})
+
 
 def player(request, player):
     """Funkcija za stranicu o pojedinacnom igracu"""

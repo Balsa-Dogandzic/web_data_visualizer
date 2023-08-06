@@ -4,21 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>UCL | Klubovi</title>
 </head>
 
 <body>
-    <h1>Klubovi</h1>
-    {% for club in clubs.itertuples %}
-    <a href="/clubs/{{club.Index}}" style="margin-left: 20px;">{{club.Index}}</a>
-    {% endfor %}
-
     <h1>Najbolji klub</h1>
 
     <h2>{{best_club.name}}</h2>
     <p>Broj golova je nevjerovatnih {{ best_club.Golovi }}, a ukupan broj asistencija igraca je
         {{ best_club.Asistencije }}</p>
-
+    <hr>
+    <h2>Klubovi</h2>
+    {% for club in clubs.itertuples %}
+    <a href="/clubs/{{club.Index}}" style="margin-left: 20px;">{{club.Index}}</a>
+    {% endfor %}
+    <hr>
     {% if graph %}
     <img src="data:image/png;base64, {{graph|safe}}">
     {% endif %}
