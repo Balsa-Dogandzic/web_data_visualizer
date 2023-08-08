@@ -4,11 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Igrač</title>
+    <title>UCL | {{player_name}}</title>
 </head>
 
 <body>
-    <h1>{{player}}</h1>
+    {% for p in player.itertuples %}
+    <h1>{{p.Igrač}}</h1>
+    <h3>{{p.Pozicija}}, {{p.Klub}}</h3>
+    <p>Golovi {{p.Golovi}}</p>
+    <p>Asistencije {{p.Asistencije}}</p>
+    <p>Broj minuta {{p.Broj_minuta}}</p>
+    <p>Broj mečeva {{p.Broj_mečeva}}</p>
+    <p>Šutevi {{p.Šutevi}}</p>
+    <p>Unutar okvira {{p.Unutar_okvira}}</p>
+    <p>Penali {{p.Penali}}</p>
+    {% endfor %}
+
+    <hr>
+
+    <h2>Odstupanje igrača od prosjeka</h2>
+    {% if performance_graph %}
+    <img src="data:image/png;base64, {{performance_graph|safe}}">
+    {% endif %}
+
+    <hr>
+    {% if goal_type_chart %}
+    <img src="data:image/png;base64, {{goal_type_chart|safe}}">
+    {% endif %}
+
+    {% if goal_distance_chart %}
+    <img src="data:image/png;base64, {{goal_distance_chart|safe}}">
+    {% endif %}
 </body>
 
 </html>

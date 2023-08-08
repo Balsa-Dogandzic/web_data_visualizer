@@ -39,5 +39,5 @@ U nastavku su screenshot-ovi web sajta:
 1. Još analize u notebook-u
 2. Dodati nove kolone u dataset-u (ocjena, golovi po meču itd.)
 3. Pronaći još literature
-4. Dovršiti stranice: početna, klubovi, klub
-5. Napraviti stranice igrači, igrač
+4. Kako formirati ocjenu igraca?
+5. Kako porediti klub sa prosjekom?

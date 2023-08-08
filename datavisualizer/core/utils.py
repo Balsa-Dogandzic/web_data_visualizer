@@ -33,12 +33,20 @@ def top10_clubs(x, y, z):
     graph = get_graph()
     return graph
 
-def club_performance(x, y, z, klub):
+def performance_check(x, y, z, name):
     plt.switch_backend("AGG")
     plt.figure(figsize = (10, 5))
-    plt.plot(x, y, label=klub)
+    plt.plot(x, y, label=name)
     plt.plot(x, z, label="Prosjek")
     plt.legend()
+    plt.tight_layout()
+    graph = get_graph()
+    return graph
+
+def get_pie_chart(x, labels):
+    plt.switch_backend("AGG")
+    plt.pie(x, labels=labels, autopct='%.1f%%')
+    plt.legend(loc='upper right')
     plt.tight_layout()
     graph = get_graph()
     return graph

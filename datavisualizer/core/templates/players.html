@@ -4,17 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Igrači</title>
+    <title>UCL | Igrači</title>
 </head>
 
 <body>
     <h1>Najbolji igrač</h1>
     <hr>
     <h2>Najbolji strijelci</h2>
-    {% if chart %}
-    <img src="data:image/png;base64, {{chart|safe}}">
+    {% if top10_graph %}
+    <img src="data:image/png;base64, {{top10_graph|safe}}">
     {% endif %}
     <hr>
+    {% if positions_graph %}
+    <img src="data:image/png;base64, {{positions_graph|safe}}">
+    {% endif %}
+
 </body>
 
 </html>
