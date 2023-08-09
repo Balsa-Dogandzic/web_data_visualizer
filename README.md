@@ -36,8 +36,9 @@ U nastavku su screenshot-ovi web sajta:
 
 ### TODO
 
-1. Još analize u notebook-u
+1. Još analize u notebook-u?
 2. Dodati nove kolone u dataset-u (ocjena, golovi po meču itd.)
 3. Pronaći još literature
-4. Kako formirati ocjenu igraca?
-5. Kako porediti klub sa prosjekom?
+4. Reformatirati kod
+5. Stilizovati stranice sa CSS-om
+6. Scatter plot na stranici klub

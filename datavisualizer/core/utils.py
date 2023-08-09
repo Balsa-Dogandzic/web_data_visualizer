@@ -2,6 +2,7 @@ import base64
 import matplotlib.pyplot as plt
 from io import BytesIO
 import numpy as np
+import seaborn as sns
 
 def get_graph():
     buffer = BytesIO()
@@ -45,8 +46,27 @@ def performance_check(x, y, z, name):
 
 def get_pie_chart(x, labels):
     plt.switch_backend("AGG")
-    plt.pie(x, labels=labels, autopct='%.1f%%')
-    plt.legend(loc='upper right')
+    plt.pie(x, labels=["" for i in range(len(labels))], autopct='%.1f%%')
+    plt.legend(labels, loc='upper right')
+    plt.tight_layout()
+    graph = get_graph()
+    return graph
+
+def positions_per_club(data):
+    plt.switch_backend("AGG")
+    plt.figure(figsize=(10, 10))
+    sns.catplot(hue = 'Pozicija', y = 'Klub',kind = 'count', data = data, legend_out=False)
+    plt.legend(loc='lower right')
+    plt.xlabel("Broj igrača")
+    plt.tight_layout()
+    graph = get_graph()
+    return graph
+
+def players_per_club(x, y):
+    plt.switch_backend("AGG")
+    plt.figure(figsize=(10, 5))
+    sns.barplot(x=x, y=y)
+    plt.xticks(rotation=90)
     plt.tight_layout()
     graph = get_graph()
     return graph

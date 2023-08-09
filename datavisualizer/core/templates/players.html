@@ -9,6 +9,9 @@
 
 <body>
     <h1>Najbolji igrač</h1>
+    <h2>{{best_player.Igrač}}</h2>
+    <h3>{{best_player.Pozicija}}, {{best_player.Klub}}</h3>
+    <p>Ostvario je nevjerovatnih {{best_player.Golovi}}, i {{best_player.Asistencije}} asistencija.</p>
     <hr>
     <h2>Najbolji strijelci</h2>
     {% if top10_graph %}
@@ -18,7 +21,9 @@
     {% if positions_graph %}
     <img src="data:image/png;base64, {{positions_graph|safe}}">
     {% endif %}
-
+    {% if positions_per_club %}
+    <img src="data:image/png;base64, {{positions_per_club|safe}}">
+    {% endif %}
 </body>
 
 </html>

@@ -1,5 +1,6 @@
 from django.shortcuts import render
-from .utils import top10_players, top10_clubs, performance_check, get_pie_chart
+from .utils import (top10_players, top10_clubs, performance_check, get_pie_chart, 
+                    positions_per_club, players_per_club)
 import pandas as pd
 
 
@@ -26,18 +27,22 @@ def clubs(request):
     clubs = df[['Klub', 'Golovi', 'Asistencije']].groupby(by='Klub').sum()
     clubs = clubs.sort_values(by="Golovi", ascending=False)
 
+    club_counts = df.value_counts("Klub")
+    p_per_c_graph = players_per_club(club_counts.index, club_counts.values)
+
     best_club = clubs.iloc[0]
 
     x = clubs.head(10).index
     y = clubs.head(10)['Golovi']
     z = clubs.head(10)['Asistencije']
 
-    graph = top10_clubs(x, y, z)
+    top10_graph = top10_clubs(x, y, z)
 
     return render(request, 'clubs.html', {
         'clubs':clubs, 
         'best_club':best_club, 
-        'graph':graph
+        'top10_graph':top10_graph,
+        'players_per_club':p_per_c_graph
     })
 
 
@@ -53,15 +58,26 @@ def club(request, club):
     clubs_mean = all_clubs[['Broj_mečeva', 'Golovi', 'Asistencije', 'Broj_faulova', 'Šutevi']].mean()
     players = df[df["Klub"] == club]
 
+    best_scorer = players.sort_values(by='Golovi', ascending=False).iloc[0]
+
     x = ['Broj mečeva', 'Golovi', 'Asistencije', 'Broj faulova', 'Šutevi']
     y = club_data[['Broj_mečeva', 'Golovi', 'Asistencije', 'Broj_faulova', 'Šutevi']]
     z = clubs_mean
     graph = performance_check(x, y, z, club)
 
+    df_mean = df[['Broj_mečeva', 'Golovi', 'Asistencije', 'Broj_faulova', 'Šutevi']].mean()
+    club_mean = players[['Broj_mečeva', 'Golovi', 'Asistencije', 'Broj_faulova', 'Šutevi']].mean()
+    x = club_mean.index
+    y = club_mean
+    z = df_mean
+    graph2 = performance_check(x, y, z, club)
+
     return render(request, 'club.html', {
         'club':club_data, 
+        'best_scorer':best_scorer,
         'players':players, 
-        "graph":graph
+        'graph':graph,
+        'graph2':graph2
     })
 
 
@@ -70,6 +86,8 @@ def players(request):
     df = pd.read_csv("static/cl_goals.csv")
     df = df.sort_values(by='Golovi', ascending=False)
 
+    best_player = df.iloc[0]
+
     x = df.head(10)['Igrač']
     y = df.head(10)['Golovi']
     top10_graph = top10_players(x, y)
@@ -77,9 +95,13 @@ def players(request):
     position_counts = df.value_counts("Pozicija")
     positions_graph = get_pie_chart(position_counts, position_counts.index)
 
+    positions_p_club = positions_per_club(df)
+
     return render(request, 'players.html', {
-        "top10_graph":top10_graph, 
-        'positions_graph':positions_graph
+        'best_player':best_player,
+        'top10_graph':top10_graph, 
+        'positions_graph':positions_graph,
+        'positions_per_club': positions_p_club
     })
 
 
