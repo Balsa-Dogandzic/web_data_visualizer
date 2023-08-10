@@ -1,170 +1,170 @@
 ,Igrač,Klub,Pozicija,Broj_minuta,Broj_mečeva,Golovi,Asistencije,Broj_faulova,Golovi_desnom,Golovi_lijevom,Golovi_glavom,Drugačiji_golovi,Iz_šesnaesterca,Van_šesnaesterca,Penali,Šutevi,Unutar_okvira
-0,Vinícius Júnior,Real Madrid,Napad,1199,13,4,6,13,3,1,0,0,4,0,0,27,8
-1,Benzema,Real Madrid,Napad,1106,12,15,1,2,11,1,3,0,13,2,3,45,23
-2,Alaba,Real Madrid,Odbrana,1040,12,1,0,9,0,1,0,0,0,1,0,5,1
-3,Kroos,Real Madrid,Sredina,902,12,2,0,7,1,1,0,0,0,2,0,12,7
-4,Rodrygo,Real Madrid,Napad,505,11,5,2,5,2,2,1,0,5,0,0,23,10
-5,Asensio,Real Madrid,Napad,207,8,1,2,2,0,1,0,0,0,1,0,5,3
-6,Salah,Liverpool,Napad,1008,13,8,2,4,0,8,0,0,7,1,1,42,22
-7,Fabinho,Liverpool,Sredina,849,13,1,0,14,1,0,0,0,1,0,0,5,1
-8,Mané,Liverpool,Sredina,822,13,5,1,16,2,3,0,0,5,0,0,21,8
-9,Konaté,Liverpool,Odbrana,720,8,2,0,11,0,0,2,0,2,0,0,6,2
-10,Henderson,Liverpool,Sredina,666,12,1,2,10,1,0,0,0,0,1,0,12,4
-11,Thiago Alcántara,Liverpool,Sredina,604,10,1,0,5,1,0,0,0,0,1,0,9,3
-12,Diogo Jota,Liverpool,Napad,578,11,1,1,11,0,0,1,0,1,0,0,16,7
-13,Keïta,Liverpool,Sredina,487,10,1,2,15,1,0,0,0,0,1,0,14,2
-14,Firmino,Liverpool,Sredina,323,7,5,0,4,3,1,1,0,4,1,0,13,5
-15,Origi,Liverpool,Napad,187,7,1,1,4,0,0,1,0,1,0,0,12,2
-16,Pau Torres,Villarreal,Odbrana,1080,12,1,0,3,1,0,0,0,1,0,0,4,1
-17,Parejo,Villarreal,Sredina,1055,12,1,3,4,0,1,0,0,1,0,0,5,1
-18,Capoue,Villarreal,Sredina,1046,12,2,4,19,1,1,0,0,2,0,0,9,3
-19,Mahrez,Man. City,Sredina,986,12,7,2,6,1,4,2,0,7,0,2,37,18
-20,Danjuma,Villarreal,Sredina,906,11,6,2,6,3,3,0,0,6,0,1,25,14
-21,Bernardo Silva,Man. City,Sredina,878,11,3,3,10,0,3,0,0,3,0,0,7,4
-22,Lewandowski,Bayern Munchen,Napad,876,10,13,3,11,8,3,1,1,13,0,3,31,19
-23,João Cancelo,Man. City,Odbrana,840,9,2,3,11,2,0,0,0,1,1,0,11,4
-24,Rüdiger,Chelsea,Odbrana,840,9,1,0,11,0,0,1,0,1,0,0,11,1
-25,Sané,Bayern Munchen,Sredina,798,10,6,6,2,1,5,0,0,3,3,0,33,13
-26,Müller,Bayern Munchen,Napad,778,10,4,3,11,1,2,1,0,3,1,0,14,8
-27,De Bruyne,Man. City,Sredina,734,10,2,4,9,1,0,1,0,2,0,0,24,7
-28,Škriniar,Inter Milan,Odbrana,720,8,1,0,5,1,0,0,0,1,0,0,10,3
-29,Gilberto,Benfica,Odbrana,715,9,1,0,16,1,0,0,0,1,0,0,3,1
-30,Rafa Silva,Benfica,Napad,704,9,1,1,8,1,0,0,0,1,0,0,9,1
-31,Azpilicueta,Chelsea,Odbrana,679,9,1,1,9,1,0,0,0,1,0,0,3,3
-32,David,LOSC,Napad,679,8,3,0,4,1,2,0,0,3,0,1,12,5
-33,Mbappé,PSG,Napad,673,8,6,4,3,6,0,0,0,6,0,0,27,16
+0,Benzema,Real Madrid,Napad,1106,12,15,1,2,11,1,3,0,13,2,3,45,23
+1,Lewandowski,Bayern Munchen,Napad,876,10,13,3,11,8,3,1,1,13,0,3,31,19
+2,Haller,Ajax,Napad,668,8,11,1,17,3,4,3,1,11,0,1,24,15
+3,Salah,Liverpool,Napad,1008,13,8,2,4,0,8,0,0,7,1,1,42,22
+4,Mahrez,Man. City,Sredina,986,12,7,2,6,1,4,2,0,7,0,2,37,18
+5,Nkunku,Leipzig,Sredina,531,6,7,0,10,3,1,3,0,7,0,0,17,11
+6,Sané,Bayern Munchen,Sredina,798,10,6,6,2,1,5,0,0,3,3,0,33,13
+7,Mbappé,PSG,Napad,673,8,6,4,3,6,0,0,0,6,0,0,27,16
+8,Danjuma,Villarreal,Sredina,906,11,6,2,6,3,3,0,0,6,0,1,25,14
+9,Núñez,Benfica,Napad,613,10,6,0,6,5,0,1,0,6,0,1,15,8
+10,Ronaldo,Man. United,Napad,611,7,6,0,4,5,0,1,0,4,2,0,22,12
+11,Rodrygo,Real Madrid,Napad,505,11,5,2,5,2,2,1,0,5,0,0,23,10
+12,Mané,Liverpool,Sredina,822,13,5,1,16,2,3,0,0,5,0,0,21,8
+13,Firmino,Liverpool,Sredina,323,7,5,0,4,3,1,1,0,4,1,0,13,5
+14,Messi,PSG,Napad,630,7,5,0,3,0,5,0,0,3,2,2,26,10
+15,Vinícius Júnior,Real Madrid,Napad,1199,13,4,6,13,3,1,0,0,4,0,0,27,8
+16,Müller,Bayern Munchen,Napad,778,10,4,3,11,1,2,1,0,3,1,0,14,8
+17,Griezmann,Atlético Madrid,Napad,518,9,4,2,6,0,4,0,0,4,0,0,12,5
+18,Pedro Gonçalves,Sporting CP,Sredina,329,5,4,2,3,4,0,0,0,3,1,1,13,7
+19,Jesus,Man. City,Napad,352,8,4,1,9,4,0,0,0,4,0,0,9,7
+20,Bernardo Silva,Man. City,Sredina,878,11,3,3,10,0,3,0,0,3,0,0,7,4
+21,Zapata,Atalanta,Napad,464,6,3,3,7,2,1,0,0,3,0,0,22,8
+22,Foden,Man. City,Sredina,658,11,3,2,5,2,0,1,0,3,0,0,22,9
+23,Sterling,Man. City,Napad,581,12,3,2,14,2,1,0,0,2,1,0,17,6
+24,André Silva,Leipzig,Napad,410,6,3,2,8,2,0,1,0,3,0,0,21,10
+25,Gnabry,Bayern Munchen,Napad,391,8,3,2,3,2,0,0,0,3,0,0,18,8
+26,Berghuis,Ajax,Napad,628,8,3,1,3,0,3,0,0,3,0,0,16,5
+27,Adeyemi,Red Bull Salzburg,Napad,607,8,3,1,9,0,3,0,0,3,0,2,16,10
+28,Paulinho,Sporting CP,Napad,582,8,3,1,5,0,3,0,0,1,2,0,16,8
+29,Džeko,Inter Milan,Napad,541,7,3,1,3,1,1,1,0,3,0,0,25,12
+30,Vanaken,Club Brugge,Sredina,540,6,3,1,3,3,0,0,0,3,0,0,12,6
+31,Reus,Borussia Dortmund,Sredina,499,6,3,1,4,3,0,0,0,3,0,2,15,9
+32,Dybala,Juventus,Napad,255,5,3,1,2,0,3,0,0,3,0,2,12,5
+33,David,LOSC,Napad,679,8,3,0,4,1,2,0,0,3,0,1,12,5
 34,Havertz,Chelsea,Sredina,672,9,3,0,12,0,1,2,0,3,0,0,26,11
-35,Haller,Ajax,Napad,668,8,11,1,17,3,4,3,1,11,0,1,24,15
-36,Foden,Man. City,Sredina,658,11,3,2,5,2,0,1,0,3,0,0,22,9
-37,Brozović,Inter Milan,Sredina,635,8,1,0,5,1,0,0,0,1,0,0,11,1
-38,Coman,Bayern Munchen,Napad,632,9,2,3,6,1,1,0,0,2,0,0,20,6
-39,Messi,PSG,Napad,630,7,5,0,3,0,5,0,0,3,2,2,26,10
-40,Tadić,Ajax,Napad,630,7,2,2,11,1,1,0,0,2,0,0,12,3
-41,Berghuis,Ajax,Napad,628,8,3,1,3,0,3,0,0,3,0,0,16,5
-42,Núñez,Benfica,Napad,613,10,6,0,6,5,0,1,0,6,0,1,15,8
-43,Ronaldo,Man. United,Napad,611,7,6,0,4,5,0,1,0,4,2,0,22,12
-44,Adeyemi,Red Bull Salzburg,Napad,607,8,3,1,9,0,3,0,0,3,0,2,16,10
-45,Christensen,Chelsea,Odbrana,603,8,1,1,7,1,0,0,0,1,0,0,3,2
-46,Martínez,Inter Milan,Napad,587,8,1,0,7,1,0,0,0,0,1,0,28,7
-47,Paulinho,Sporting CP,Napad,582,8,3,1,5,0,3,0,0,1,2,0,16,8
-48,Sterling,Man. City,Napad,581,12,3,2,14,2,1,0,0,2,1,0,17,6
-49,De Paul,Atlético Madrid,Sredina,577,9,1,0,12,1,0,0,0,1,0,0,13,4
-50,Antony,Ajax,Napad,577,7,2,5,5,0,2,0,0,2,0,0,26,10
-51,Walker,Man. City,Odbrana,577,7,1,0,3,1,0,0,0,1,0,0,2,1
-52,João Félix,Atlético Madrid,Napad,573,8,1,1,4,0,0,1,0,1,0,0,12,3
-53,Wöber,Red Bull Salzburg,Odbrana,573,7,1,0,7,0,1,0,0,0,1,0,8,2
-54,Blind,Ajax,Odbrana,572,8,1,1,5,0,1,0,0,0,1,0,4,2
-55,Jorginho,Chelsea,Sredina,561,8,2,2,9,2,0,0,0,2,0,2,4,2
-56,Alex Sandro,Juventus,Odbrana,553,7,1,0,8,0,0,1,0,1,0,0,6,1
-57,Džeko,Inter Milan,Napad,541,7,3,1,3,1,1,1,0,3,0,0,25,12
-58,Vanaken,Club Brugge,Sredina,540,6,3,1,3,3,0,0,0,3,0,0,12,6
-59,S. Thill,Sheriff Tiraspol,Sredina,540,6,2,1,2,0,1,0,1,0,2,0,13,6
-60,Coates,Sporting CP,Odbrana,540,6,2,0,1,0,0,2,0,2,0,0,7,2
-61,Mount,Chelsea,Sredina,538,7,1,2,10,1,0,0,0,1,0,0,11,3
-62,Maguire,Man. United,Odbrana,534,6,1,0,6,1,0,0,0,1,0,0,4,2
-63,Moumi Ngamaleu,Young Boys,Sredina,532,6,1,1,10,1,0,0,0,1,0,0,11,2
-64,Nkunku,Leipzig,Sredina,531,6,7,0,10,3,1,3,0,7,0,0,17,11
-65,Traore,Sheriff Tiraspol,Sredina,530,6,2,1,8,0,1,1,0,2,0,0,11,4
-66,Pedro Porro,Sporting CP,Odbrana,529,7,1,0,6,0,0,0,1,1,0,0,8,3
-67,Freuler,Atalanta,Sredina,526,6,1,1,6,1,0,0,0,1,0,0,2,2
-68,Gerard Moreno,Villarreal,Napad,524,7,2,4,3,0,1,1,0,2,0,1,21,6
-69,Morata,Juventus,Napad,520,7,2,0,5,1,1,0,0,2,0,0,18,7
-70,Griezmann,Atlético Madrid,Napad,518,9,4,2,6,0,4,0,0,4,0,0,12,5
-71,Sučić,Red Bull Salzburg,Sredina,516,8,1,0,4,0,1,0,0,1,0,1,12,2
-72,Yaremchuk,Benfica,Napad,514,10,3,0,2,0,2,1,0,3,0,0,15,9
-73,Sarabia,Sporting CP,Napad,510,8,2,0,3,1,1,0,0,2,0,1,6,4
-74,James,Chelsea,Odbrana,505,6,1,0,5,1,0,0,0,1,0,0,12,5
-75,Bellingham,Borussia Dortmund,Sredina,503,6,1,3,8,1,0,0,0,1,0,0,13,4
-76,Reus,Borussia Dortmund,Sredina,499,6,3,1,4,3,0,0,0,3,0,2,15,9
-77,Rakitskyy,Zenit,Odbrana,497,6,1,2,2,0,1,0,0,1,0,1,7,3
-78,Taremi,Porto,Napad,494,6,1,1,9,0,0,1,0,1,0,0,17,3
-79,Elia,Young Boys,Napad,489,6,1,0,6,1,0,0,0,1,0,0,10,3
-80,De Vrij,Inter Milan,Odbrana,487,6,1,0,5,1,0,0,0,1,0,0,4,3
-81,Mukiele,Leipzig,Odbrana,484,6,1,1,9,1,0,0,0,1,0,0,5,2
-82,Wendel,Zenit,Sredina,484,6,1,0,4,1,0,0,0,1,0,0,7,4
-83,Renan Lodi,Atlético Madrid,Odbrana,478,10,1,2,14,0,0,1,0,1,0,0,4,2
-84,Zapata,Atalanta,Napad,464,6,3,3,7,2,1,0,0,3,0,0,22,8
-85,Coquelin,Villarreal,Sredina,463,8,1,0,9,0,0,1,0,1,0,0,3,2
-86,Ocampos,Sevilla,Sredina,463,6,1,1,4,1,0,0,0,1,0,0,12,3
-87,Grealish,Man. City,Sredina,461,7,1,1,9,1,0,0,0,1,0,0,10,3
-88,Claudinho,Zenit,Sredina,460,6,2,0,7,1,0,1,0,2,0,0,13,4
-89,Palomino,Atalanta,Odbrana,450,5,1,1,5,0,1,0,0,1,0,0,3,1
-90,Musiala,Bayern Munchen,Sredina,448,8,1,1,5,0,1,0,0,1,0,0,10,3
-91,Ziyech,Chelsea,Sredina,446,9,1,2,13,0,1,0,0,1,0,0,13,6
-92,Pino,Villarreal,Napad,431,7,1,0,7,0,0,1,0,1,0,0,4,2
-93,Tomori,AC Milan,Odbrana,418,5,1,0,7,1,0,0,0,1,0,0,3,2
-94,Rits,Club Brugge,Sredina,417,6,2,0,2,1,1,0,0,2,0,0,8,4
-95,Baku,Wolfsburg,Sredina,413,6,1,0,3,1,0,0,0,1,0,0,2,1
-96,André Silva,Leipzig,Napad,410,6,3,2,8,2,0,1,0,3,0,0,21,10
-97,Vidal,Inter Milan,Sredina,409,7,1,2,10,0,1,0,0,1,0,0,3,2
-98,Correa,Atlético Madrid,Napad,401,10,1,0,10,1,0,0,0,1,0,0,9,3
-99,Gueye,PSG,Sredina,400,7,1,0,10,1,0,0,0,1,0,0,4,2
-100,Piqué,Barcelona,Odbrana,393,5,1,0,8,1,0,0,0,1,0,0,2,1
-101,Malen,Borussia Dortmund,Napad,392,6,3,0,6,1,2,0,0,3,0,0,11,5
-102,Gnabry,Bayern Munchen,Napad,391,8,3,2,3,2,0,0,0,3,0,0,18,8
-103,Hefti,Young Boys,Odbrana,386,6,1,1,9,0,1,0,0,0,1,0,2,1
-104,Forsberg,Leipzig,Napad,385,6,2,2,6,2,0,0,0,1,1,1,11,4
-105,Demiral,Atalanta,Odbrana,370,6,1,0,4,0,0,1,0,1,0,0,2,2
-106,Gonçalo Ramos,Benfica,Napad,369,7,1,1,8,1,0,0,0,1,0,0,10,2
-107,Pulišić,Chelsea,Sredina,367,7,2,1,4,2,0,0,0,2,0,0,6,2
-108,Larin,Beşiktaş,Napad,354,5,1,0,7,0,0,1,0,1,0,0,8,5
-109,Jesus,Man. City,Napad,352,8,4,1,9,4,0,0,0,4,0,0,9,7
-110,Brahim Díaz,AC Milan,Sredina,351,5,1,1,3,0,1,0,0,1,0,0,5,2
-111,Fernando,Shakhtar Donetsk,Sredina,350,5,2,0,6,2,0,0,0,2,0,0,12,5
-112,Luis Suárez,Atlético Madrid,Napad,347,7,1,0,3,1,0,0,0,1,0,1,8,2
-113,Okafor,Red Bull Salzburg,Sredina,345,6,3,0,5,3,0,0,0,3,0,0,7,5
-114,Ghezzal,Beşiktaş,Sredina,345,5,1,0,4,0,1,0,0,1,0,1,8,2
-115,Siebatcheu,Young Boys,Napad,341,6,2,0,7,1,0,1,0,2,0,0,10,3
-116,Chiesa,Juventus,Napad,336,4,2,0,5,0,2,0,0,2,0,0,13,4
-117,Trigueros,Villarreal,Sredina,330,9,1,0,3,1,0,0,0,1,0,0,6,6
-118,Pedro Gonçalves,Sporting CP,Sredina,329,5,4,2,3,4,0,0,0,3,1,1,13,7
-119,Jordán,Sevilla,Sredina,327,6,1,0,10,0,0,1,0,1,0,0,3,2
-120,Herrera,PSG,Sredina,326,6,1,0,6,0,1,0,0,1,0,0,3,2
-121,Garmash,Dynamo Kyiv,Sredina,325,6,1,0,11,1,0,0,0,1,0,0,7,3
-122,Aké,Man. City,Odbrana,324,6,1,0,3,0,0,1,0,1,0,0,4,1
-123,L. Nmecha,Wolfsburg,Napad,322,5,2,0,8,1,0,1,0,2,0,0,9,4
-124,Lukaku,Chelsea,Napad,320,6,2,0,2,0,1,1,0,2,0,0,11,3
-125,Moreno,Villarreal,Odbrana,309,7,1,0,5,0,1,0,0,1,0,0,3,2
-126,Montero,Beşiktaş,Odbrana,306,4,1,0,4,0,0,1,0,1,0,0,1,1
-127,Greenwood,Man. United,Napad,304,4,1,1,3,0,1,0,0,1,0,0,2,2
-128,Azmoun,Zenit,Napad,303,5,2,1,3,2,0,0,0,2,0,0,8,6
-129,Malinovskyi,Atalanta,Sredina,301,5,1,0,6,0,1,0,0,0,1,0,11,4
-130,Sérgio Oliveira,Porto,Sredina,300,6,1,0,5,1,0,0,0,1,0,1,2,1
-131,Ikoné,LOSC,Sredina,297,5,1,2,6,1,0,0,0,1,0,0,11,4
-132,Rafael Leão,AC Milan,Napad,294,4,1,1,4,1,0,0,0,1,0,0,1,1
-133,Sutormin,Zenit,Sredina,293,4,1,0,1,0,1,0,0,0,1,0,2,2
-134,Alex Telles,Man. United,Odbrana,293,4,1,0,2,0,1,0,0,0,1,0,1,1
-135,Hudson-Odoi,Chelsea,Sredina,289,5,1,2,4,0,1,0,0,1,0,0,7,3
-136,Rakitić,Sevilla,Sredina,276,5,2,1,6,2,0,0,0,2,0,2,7,3
-137,Chukwueze,Villarreal,Sredina,273,9,2,0,6,0,2,0,0,2,0,0,3,2
-138,Rieder,Young Boys,Sredina,272,6,1,1,6,1,0,0,0,0,1,0,6,2
-139,Rafa Mir,Sevilla,Napad,271,6,1,1,3,1,0,0,0,1,0,0,10,4
-140,Wijnaldum,PSG,Sredina,261,5,2,0,4,0,1,1,0,2,0,0,4,4
-141,Dia,Villarreal,Napad,258,8,1,0,3,1,0,0,0,1,0,0,5,2
-142,Steffen,Wolfsburg,Sredina,258,5,2,0,5,0,2,0,0,2,0,0,5,2
-143,Rashford,Man. United,Napad,257,5,1,0,3,1,0,0,0,1,0,0,10,2
-144,Kuzyaev,Zenit,Sredina,257,4,1,0,3,0,0,1,0,1,0,0,3,1
-145,Dybala,Juventus,Napad,255,5,3,1,2,0,3,0,0,3,0,2,12,5
-146,Iličić,Atalanta,Sredina,249,4,1,1,1,0,1,0,0,1,0,0,3,1
-147,Sierro,Young Boys,Sredina,240,5,1,0,5,0,1,0,0,1,0,0,5,3
-148,Klaassen,Ajax,Sredina,232,7,1,1,5,1,0,0,0,1,0,0,1,1
-149,Adamu,Red Bull Salzburg,Napad,231,8,1,0,10,1,0,0,0,1,0,0,4,2
-150,Rieks,Malmö,Sredina,222,3,1,0,1,1,0,0,0,1,0,0,3,1
-151,Pašalić,Atalanta,Sredina,220,5,1,1,2,0,1,0,0,1,0,0,3,1
-152,Nuno Santos,Sporting CP,Napad,218,7,1,0,1,0,1,0,0,1,0,0,2,1
-153,Pessina,Atalanta,Sredina,211,4,1,0,2,0,1,0,0,1,0,0,2,2
-154,Szoboszlai,Leipzig,Sredina,209,4,2,0,1,1,1,0,0,2,0,1,4,2
-155,Yakhshiboev,Sheriff Tiraspol,Napad,205,3,1,0,5,0,0,1,0,1,0,0,4,2
-156,Neres,Ajax,Napad,203,5,1,0,3,0,1,0,0,1,0,0,6,3
-157,Haaland,Borussia Dortmund,Napad,203,3,3,0,2,0,1,2,0,3,0,0,12,7
-158,Bruno Tabata,Sporting CP,Sredina,201,4,1,1,5,0,1,0,0,1,0,0,4,1
-159,Morato,Benfica,Odbrana,180,2,1,0,1,0,0,1,0,1,0,0,1,1
-160,Chalobah,Chelsea,Odbrana,175,3,1,0,3,1,0,0,0,1,0,0,3,1
-161,Elanga,Man. United,Napad,172,3,1,0,3,1,0,0,0,1,0,0,4,3
-162,Kean,Juventus,Napad,168,6,1,0,5,0,0,1,0,1,0,0,9,4
-163,Gomes,LOSC,Sredina,168,4,1,1,1,1,0,0,0,1,0,0,3,1
-164,Yansané,Sheriff Tiraspol,Napad,156,3,1,0,1,0,0,1,0,1,0,0,3,2
-165,Alexis Sánchez,Inter Milan,Napad,155,6,1,1,2,1,0,0,0,1,0,0,2,1
+35,Yaremchuk,Benfica,Napad,514,10,3,0,2,0,2,1,0,3,0,0,15,9
+36,Malen,Borussia Dortmund,Napad,392,6,3,0,6,1,2,0,0,3,0,0,11,5
+37,Okafor,Red Bull Salzburg,Sredina,345,6,3,0,5,3,0,0,0,3,0,0,7,5
+38,Haaland,Borussia Dortmund,Napad,203,3,3,0,2,0,1,2,0,3,0,0,12,7
+39,Antony,Ajax,Napad,577,7,2,5,5,0,2,0,0,2,0,0,26,10
+40,Capoue,Villarreal,Sredina,1046,12,2,4,19,1,1,0,0,2,0,0,9,3
+41,De Bruyne,Man. City,Sredina,734,10,2,4,9,1,0,1,0,2,0,0,24,7
+42,Gerard Moreno,Villarreal,Napad,524,7,2,4,3,0,1,1,0,2,0,1,21,6
+43,João Cancelo,Man. City,Odbrana,840,9,2,3,11,2,0,0,0,1,1,0,11,4
+44,Coman,Bayern Munchen,Napad,632,9,2,3,6,1,1,0,0,2,0,0,20,6
+45,Tadić,Ajax,Napad,630,7,2,2,11,1,1,0,0,2,0,0,12,3
+46,Jorginho,Chelsea,Sredina,561,8,2,2,9,2,0,0,0,2,0,2,4,2
+47,Forsberg,Leipzig,Napad,385,6,2,2,6,2,0,0,0,1,1,1,11,4
+48,S. Thill,Sheriff Tiraspol,Sredina,540,6,2,1,2,0,1,0,1,0,2,0,13,6
+49,Traore,Sheriff Tiraspol,Sredina,530,6,2,1,8,0,1,1,0,2,0,0,11,4
+50,Pulišić,Chelsea,Sredina,367,7,2,1,4,2,0,0,0,2,0,0,6,2
+51,Azmoun,Zenit,Napad,303,5,2,1,3,2,0,0,0,2,0,0,8,6
+52,Rakitić,Sevilla,Sredina,276,5,2,1,6,2,0,0,0,2,0,2,7,3
+53,Kroos,Real Madrid,Sredina,902,12,2,0,7,1,1,0,0,0,2,0,12,7
+54,Konaté,Liverpool,Odbrana,720,8,2,0,11,0,0,2,0,2,0,0,6,2
+55,Coates,Sporting CP,Odbrana,540,6,2,0,1,0,0,2,0,2,0,0,7,2
+56,Morata,Juventus,Napad,520,7,2,0,5,1,1,0,0,2,0,0,18,7
+57,Sarabia,Sporting CP,Napad,510,8,2,0,3,1,1,0,0,2,0,1,6,4
+58,Claudinho,Zenit,Sredina,460,6,2,0,7,1,0,1,0,2,0,0,13,4
+59,Rits,Club Brugge,Sredina,417,6,2,0,2,1,1,0,0,2,0,0,8,4
+60,Fernando,Shakhtar Donetsk,Sredina,350,5,2,0,6,2,0,0,0,2,0,0,12,5
+61,Siebatcheu,Young Boys,Napad,341,6,2,0,7,1,0,1,0,2,0,0,10,3
+62,Chiesa,Juventus,Napad,336,4,2,0,5,0,2,0,0,2,0,0,13,4
+63,L. Nmecha,Wolfsburg,Napad,322,5,2,0,8,1,0,1,0,2,0,0,9,4
+64,Lukaku,Chelsea,Napad,320,6,2,0,2,0,1,1,0,2,0,0,11,3
+65,Chukwueze,Villarreal,Sredina,273,9,2,0,6,0,2,0,0,2,0,0,3,2
+66,Wijnaldum,PSG,Sredina,261,5,2,0,4,0,1,1,0,2,0,0,4,4
+67,Steffen,Wolfsburg,Sredina,258,5,2,0,5,0,2,0,0,2,0,0,5,2
+68,Szoboszlai,Leipzig,Sredina,209,4,2,0,1,1,1,0,0,2,0,1,4,2
+69,Parejo,Villarreal,Sredina,1055,12,1,3,4,0,1,0,0,1,0,0,5,1
+70,Bellingham,Borussia Dortmund,Sredina,503,6,1,3,8,1,0,0,0,1,0,0,13,4
+71,Asensio,Real Madrid,Napad,207,8,1,2,2,0,1,0,0,0,1,0,5,3
+72,Henderson,Liverpool,Sredina,666,12,1,2,10,1,0,0,0,0,1,0,12,4
+73,Keïta,Liverpool,Sredina,487,10,1,2,15,1,0,0,0,0,1,0,14,2
+74,Mount,Chelsea,Sredina,538,7,1,2,10,1,0,0,0,1,0,0,11,3
+75,Rakitskyy,Zenit,Odbrana,497,6,1,2,2,0,1,0,0,1,0,1,7,3
+76,Renan Lodi,Atlético Madrid,Odbrana,478,10,1,2,14,0,0,1,0,1,0,0,4,2
+77,Ziyech,Chelsea,Sredina,446,9,1,2,13,0,1,0,0,1,0,0,13,6
+78,Vidal,Inter Milan,Sredina,409,7,1,2,10,0,1,0,0,1,0,0,3,2
+79,Ikoné,LOSC,Sredina,297,5,1,2,6,1,0,0,0,1,0,0,11,4
+80,Hudson-Odoi,Chelsea,Sredina,289,5,1,2,4,0,1,0,0,1,0,0,7,3
+81,Diogo Jota,Liverpool,Napad,578,11,1,1,11,0,0,1,0,1,0,0,16,7
+82,Origi,Liverpool,Napad,187,7,1,1,4,0,0,1,0,1,0,0,12,2
+83,Rafa Silva,Benfica,Napad,704,9,1,1,8,1,0,0,0,1,0,0,9,1
+84,Azpilicueta,Chelsea,Odbrana,679,9,1,1,9,1,0,0,0,1,0,0,3,3
+85,Christensen,Chelsea,Odbrana,603,8,1,1,7,1,0,0,0,1,0,0,3,2
+86,João Félix,Atlético Madrid,Napad,573,8,1,1,4,0,0,1,0,1,0,0,12,3
+87,Blind,Ajax,Odbrana,572,8,1,1,5,0,1,0,0,0,1,0,4,2
+88,Moumi Ngamaleu,Young Boys,Sredina,532,6,1,1,10,1,0,0,0,1,0,0,11,2
+89,Freuler,Atalanta,Sredina,526,6,1,1,6,1,0,0,0,1,0,0,2,2
+90,Taremi,Porto,Napad,494,6,1,1,9,0,0,1,0,1,0,0,17,3
+91,Mukiele,Leipzig,Odbrana,484,6,1,1,9,1,0,0,0,1,0,0,5,2
+92,Ocampos,Sevilla,Sredina,463,6,1,1,4,1,0,0,0,1,0,0,12,3
+93,Grealish,Man. City,Sredina,461,7,1,1,9,1,0,0,0,1,0,0,10,3
+94,Palomino,Atalanta,Odbrana,450,5,1,1,5,0,1,0,0,1,0,0,3,1
+95,Musiala,Bayern Munchen,Sredina,448,8,1,1,5,0,1,0,0,1,0,0,10,3
+96,Hefti,Young Boys,Odbrana,386,6,1,1,9,0,1,0,0,0,1,0,2,1
+97,Gonçalo Ramos,Benfica,Napad,369,7,1,1,8,1,0,0,0,1,0,0,10,2
+98,Brahim Díaz,AC Milan,Sredina,351,5,1,1,3,0,1,0,0,1,0,0,5,2
+99,Greenwood,Man. United,Napad,304,4,1,1,3,0,1,0,0,1,0,0,2,2
+100,Rafael Leão,AC Milan,Napad,294,4,1,1,4,1,0,0,0,1,0,0,1,1
+101,Rieder,Young Boys,Sredina,272,6,1,1,6,1,0,0,0,0,1,0,6,2
+102,Rafa Mir,Sevilla,Napad,271,6,1,1,3,1,0,0,0,1,0,0,10,4
+103,Iličić,Atalanta,Sredina,249,4,1,1,1,0,1,0,0,1,0,0,3,1
+104,Klaassen,Ajax,Sredina,232,7,1,1,5,1,0,0,0,1,0,0,1,1
+105,Pašalić,Atalanta,Sredina,220,5,1,1,2,0,1,0,0,1,0,0,3,1
+106,Bruno Tabata,Sporting CP,Sredina,201,4,1,1,5,0,1,0,0,1,0,0,4,1
+107,Gomes,LOSC,Sredina,168,4,1,1,1,1,0,0,0,1,0,0,3,1
+108,Alexis Sánchez,Inter Milan,Napad,155,6,1,1,2,1,0,0,0,1,0,0,2,1
+109,Alaba,Real Madrid,Odbrana,1040,12,1,0,9,0,1,0,0,0,1,0,5,1
+110,Fabinho,Liverpool,Sredina,849,13,1,0,14,1,0,0,0,1,0,0,5,1
+111,Thiago Alcántara,Liverpool,Sredina,604,10,1,0,5,1,0,0,0,0,1,0,9,3
+112,Pau Torres,Villarreal,Odbrana,1080,12,1,0,3,1,0,0,0,1,0,0,4,1
+113,Rüdiger,Chelsea,Odbrana,840,9,1,0,11,0,0,1,0,1,0,0,11,1
+114,Škriniar,Inter Milan,Odbrana,720,8,1,0,5,1,0,0,0,1,0,0,10,3
+115,Gilberto,Benfica,Odbrana,715,9,1,0,16,1,0,0,0,1,0,0,3,1
+116,Brozović,Inter Milan,Sredina,635,8,1,0,5,1,0,0,0,1,0,0,11,1
+117,Martínez,Inter Milan,Napad,587,8,1,0,7,1,0,0,0,0,1,0,28,7
+118,De Paul,Atlético Madrid,Sredina,577,9,1,0,12,1,0,0,0,1,0,0,13,4
+119,Walker,Man. City,Odbrana,577,7,1,0,3,1,0,0,0,1,0,0,2,1
+120,Wöber,Red Bull Salzburg,Odbrana,573,7,1,0,7,0,1,0,0,0,1,0,8,2
+121,Alex Sandro,Juventus,Odbrana,553,7,1,0,8,0,0,1,0,1,0,0,6,1
+122,Maguire,Man. United,Odbrana,534,6,1,0,6,1,0,0,0,1,0,0,4,2
+123,Pedro Porro,Sporting CP,Odbrana,529,7,1,0,6,0,0,0,1,1,0,0,8,3
+124,Sučić,Red Bull Salzburg,Sredina,516,8,1,0,4,0,1,0,0,1,0,1,12,2
+125,James,Chelsea,Odbrana,505,6,1,0,5,1,0,0,0,1,0,0,12,5
+126,Elia,Young Boys,Napad,489,6,1,0,6,1,0,0,0,1,0,0,10,3
+127,De Vrij,Inter Milan,Odbrana,487,6,1,0,5,1,0,0,0,1,0,0,4,3
+128,Wendel,Zenit,Sredina,484,6,1,0,4,1,0,0,0,1,0,0,7,4
+129,Coquelin,Villarreal,Sredina,463,8,1,0,9,0,0,1,0,1,0,0,3,2
+130,Pino,Villarreal,Napad,431,7,1,0,7,0,0,1,0,1,0,0,4,2
+131,Tomori,AC Milan,Odbrana,418,5,1,0,7,1,0,0,0,1,0,0,3,2
+132,Baku,Wolfsburg,Sredina,413,6,1,0,3,1,0,0,0,1,0,0,2,1
+133,Correa,Atlético Madrid,Napad,401,10,1,0,10,1,0,0,0,1,0,0,9,3
+134,Gueye,PSG,Sredina,400,7,1,0,10,1,0,0,0,1,0,0,4,2
+135,Piqué,Barcelona,Odbrana,393,5,1,0,8,1,0,0,0,1,0,0,2,1
+136,Demiral,Atalanta,Odbrana,370,6,1,0,4,0,0,1,0,1,0,0,2,2
+137,Larin,Beşiktaş,Napad,354,5,1,0,7,0,0,1,0,1,0,0,8,5
+138,Luis Suárez,Atlético Madrid,Napad,347,7,1,0,3,1,0,0,0,1,0,1,8,2
+139,Ghezzal,Beşiktaş,Sredina,345,5,1,0,4,0,1,0,0,1,0,1,8,2
+140,Trigueros,Villarreal,Sredina,330,9,1,0,3,1,0,0,0,1,0,0,6,6
+141,Jordán,Sevilla,Sredina,327,6,1,0,10,0,0,1,0,1,0,0,3,2
+142,Herrera,PSG,Sredina,326,6,1,0,6,0,1,0,0,1,0,0,3,2
+143,Garmash,Dynamo Kyiv,Sredina,325,6,1,0,11,1,0,0,0,1,0,0,7,3
+144,Aké,Man. City,Odbrana,324,6,1,0,3,0,0,1,0,1,0,0,4,1
+145,Moreno,Villarreal,Odbrana,309,7,1,0,5,0,1,0,0,1,0,0,3,2
+146,Montero,Beşiktaş,Odbrana,306,4,1,0,4,0,0,1,0,1,0,0,1,1
+147,Malinovskyi,Atalanta,Sredina,301,5,1,0,6,0,1,0,0,0,1,0,11,4
+148,Sérgio Oliveira,Porto,Sredina,300,6,1,0,5,1,0,0,0,1,0,1,2,1
+149,Sutormin,Zenit,Sredina,293,4,1,0,1,0,1,0,0,0,1,0,2,2
+150,Alex Telles,Man. United,Odbrana,293,4,1,0,2,0,1,0,0,0,1,0,1,1
+151,Dia,Villarreal,Napad,258,8,1,0,3,1,0,0,0,1,0,0,5,2
+152,Rashford,Man. United,Napad,257,5,1,0,3,1,0,0,0,1,0,0,10,2
+153,Kuzyaev,Zenit,Sredina,257,4,1,0,3,0,0,1,0,1,0,0,3,1
+154,Sierro,Young Boys,Sredina,240,5,1,0,5,0,1,0,0,1,0,0,5,3
+155,Adamu,Red Bull Salzburg,Napad,231,8,1,0,10,1,0,0,0,1,0,0,4,2
+156,Rieks,Malmö,Sredina,222,3,1,0,1,1,0,0,0,1,0,0,3,1
+157,Nuno Santos,Sporting CP,Napad,218,7,1,0,1,0,1,0,0,1,0,0,2,1
+158,Pessina,Atalanta,Sredina,211,4,1,0,2,0,1,0,0,1,0,0,2,2
+159,Yakhshiboev,Sheriff Tiraspol,Napad,205,3,1,0,5,0,0,1,0,1,0,0,4,2
+160,Neres,Ajax,Napad,203,5,1,0,3,0,1,0,0,1,0,0,6,3
+161,Morato,Benfica,Odbrana,180,2,1,0,1,0,0,1,0,1,0,0,1,1
+162,Chalobah,Chelsea,Odbrana,175,3,1,0,3,1,0,0,0,1,0,0,3,1
+163,Elanga,Man. United,Napad,172,3,1,0,3,1,0,0,0,1,0,0,4,3
+164,Kean,Juventus,Napad,168,6,1,0,5,0,0,1,0,1,0,0,9,4
+165,Yansané,Sheriff Tiraspol,Napad,156,3,1,0,1,0,0,1,0,1,0,0,3,2
 166,Fati,Barcelona,Napad,154,3,1,0,6,1,0,0,0,1,0,0,4,1
 167,Muriel,Atalanta,Napad,130,5,1,0,2,1,0,0,0,0,1,0,8,4
 168,Rebić,AC Milan,Napad,117,2,1,0,2,1,0,0,0,1,0,0,2,2

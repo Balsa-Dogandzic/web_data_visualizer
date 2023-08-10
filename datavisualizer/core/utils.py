@@ -14,7 +14,7 @@ def get_graph():
     buffer.close()
     return graph
 
-def top10_players(x, y):
+def one_bar_chart(x, y):
     plt.switch_backend("AGG")
     plt.figure(figsize = (12, 5))
     plt.bar(x, y)
@@ -22,13 +22,25 @@ def top10_players(x, y):
     graph = get_graph()
     return graph
 
-def top10_clubs(x, y, z):
+def two_bar_chart(x, y, z):
     plt.switch_backend("AGG")
     plt.figure(figsize = (12, 5))
     x_axis = np.arange(len(x))
     plt.bar(x_axis - 0.2, y, 0.4, label="Golovi")
     plt.bar(x_axis + 0.2, z, 0.4, label="Asistencije")
     plt.xticks(x_axis, x)
+    plt.legend()
+    plt.tight_layout()
+    graph = get_graph()
+    return graph
+
+def horizontal_barchart(x, y, z):
+    plt.switch_backend("AGG")
+    plt.figure(figsize=(10, 5))
+    y_axis = np.arange(len(y))
+    plt.barh(y_axis - 0.2, x, 0.4, label='Golovi')
+    plt.barh(y_axis + 0.2, z, 0.4, label='Asistencije')
+    plt.yticks(y_axis, y)
     plt.legend()
     plt.tight_layout()
     graph = get_graph()
@@ -65,7 +77,7 @@ def positions_per_club(data):
 def players_per_club(x, y):
     plt.switch_backend("AGG")
     plt.figure(figsize=(10, 5))
-    sns.barplot(x=x, y=y)
+    sns.barplot(x=x, y=y,color="dodgerblue")
     plt.xticks(rotation=90)
     plt.tight_layout()
     graph = get_graph()

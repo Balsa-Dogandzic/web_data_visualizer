@@ -1,22 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'components/base.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UCL</title>
-</head>
+{% block title %}
+<title>UCL</title>
+{% endblock title %}
 
-<body>
-    <h1>Najbolji strijelci</h1>
+{% block content %}
+
+<nav>
+    <div class="logo">UCL</div>
+    <ul class="nav-links">
+        <li><a href="/players">Igrači</a></li>
+        <li><a href="/clubs">Klubovi</a></li>
+    </ul>
+</nav>
+
+<div class="carousel">
+    <div class="overlay"></div>
+</div>
+
+<div class="separator"></div>
+
+<div class="single-graph">
+    <div class="graph-info">
+        <h1>Najbolji strijelci</h1>
+    </div>
+
     {% if chart %}
     <img src="data:image/png;base64, {{chart|safe}}">
     {% endif %}
-    <hr>
-    <h2>Klubovi</h2>
-    {% for club in clubs %}
-    <a href="/clubs/{{club}}" style="margin-right: 20px;">{{ club }}</a>
-    {% endfor %}
-</body>
+</div>
 
-</html>
+<h2>Klubovi</h2>
+{% for club in clubs %}
+<a href="/clubs/{{club}}" style="margin-right: 20px;">{{ club }}</a>
+{% endfor %}
+
+{% endblock content %}

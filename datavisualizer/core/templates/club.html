@@ -14,14 +14,15 @@
     <p>Broj faulova {{club.Broj_faulova}}</p>
     <p>Broj šuteva {{club.Šutevi}}</p>
     <hr>
-    <h2>Najbolji strijelac kluba</h2>
-    <h3>{{best_scorer.Igrač}}</h3>
-    <p>{{best_scorer.Pozicija}}</p>
-    <p>Broj meceva: {{best_scorer.Broj_mečeva}}</p>
-    <p>Golovi:{{best_scorer.Golovi}}</p>
-    <p>Asistencije: {{best_scorer.Asistencije}}</p>
-    <p>Šutevi: {{best_scorer.Šutevi}}</p>
-    <p>Šutevi unutar okvira: {{best_scorer.Unutar_okvira}}</p>
+    <h2>Grafik</h2>
+    <p>Sa sumom igraca kluba</p>
+    {% if graph %}
+    <img src="data:image/png;base64, {{graph|safe}}">
+    {% endif %}
+    <p>Sa prosjekom igraca kluba</p>
+    {% if graph2 %}
+    <img src="data:image/png;base64, {{graph2|safe}}">
+    {% endif %}
     <hr>
     <h2>Lista strijelaca</h2>
     <table>
@@ -51,14 +52,9 @@
         {% endfor %}
     </table>
     <hr>
-    <h2>Grafik</h2>
-    <p>Sa sumom igraca kluba</p>
-    {% if graph %}
-    <img src="data:image/png;base64, {{graph|safe}}">
-    {% endif %}
-    <p>Sa prosjekom igraca kluba</p>
-    {% if graph2 %}
-    <img src="data:image/png;base64, {{graph2|safe}}">
+
+    {% if best_club_players %}
+    <img src="data:image/png;base64, {{best_club_players|safe}}">
     {% endif %}
 </body>
 
