@@ -6,33 +6,49 @@
 
 {% block content %}
 
-<nav>
-    <div class="logo">UCL</div>
-    <ul class="nav-links">
-        <li><a href="/players">Igrači</a></li>
-        <li><a href="/clubs">Klubovi</a></li>
-    </ul>
-</nav>
 
 <div class="carousel">
-    <div class="overlay"></div>
+    <div class="overlay">
+        {% include 'components/nav.html' %}
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Klubovi liga šampiona 2021/2022</h1>
+                <p>Saznajte koji klub je dao najviše golova, koliko svaki klub ima strijelaca, <br>
+                    ali i detaljnije statističke podatke o klubovima</p>
+                <a href="/clubs" class="hero-link">Saznajte više</a>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div class="separator"></div>
 
 <div class="single-graph">
     <div class="graph-info">
-        <h1>Najbolji strijelci</h1>
+        <h2>Najbolji strijelci</h2>
+        <p>
+            Na grafiku su prikazani najbolji strijelci na ovom takmičenju. Igrači su poređani po broju golova koji su
+            postigli tokom takmičenja.
+        </p>
     </div>
 
     {% if chart %}
-    <img src="data:image/png;base64, {{chart|safe}}">
+    <img src="data:image/png;base64, {{chart|safe}}" alt="top10players">
     {% endif %}
 </div>
 
-<h2>Klubovi</h2>
-{% for club in clubs %}
-<a href="/clubs/{{club}}" style="margin-right: 20px;">{{ club }}</a>
-{% endfor %}
+<div class="separator"></div>
+
+<div class="clubs-list">
+    <h2>Lista klubova</h2>
+    <p>Svi klubovi koji su učestvovali u Ligi šampiona 2021/2022:</p>
+    <div class="club-list-container">
+        {% for club in clubs %}
+        <a href="/clubs/{{club}}" class="club-link">{{ club }}</a>
+        {% endfor %}
+    </div>
+</div>
+
+{% include 'components/footer.html' %}
 
 {% endblock content %}
