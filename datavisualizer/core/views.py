@@ -23,7 +23,7 @@ def index(request):
 def clubs(request):
     """Funkcija za stranicu o klubovima"""
     df = pd.read_csv("static/cl_goals.csv")
-    clubs = df[['Klub', 'Golovi', 'Asistencije']].groupby(by='Klub').sum()
+    clubs = df[['Klub', 'Golovi', 'Asistencije','Broj_faulova','Penali']].groupby(by='Klub').sum()
     clubs = clubs.sort_values(by=["Golovi", "Asistencije"], ascending=[False, False])
 
     club_counts = df.value_counts("Klub")

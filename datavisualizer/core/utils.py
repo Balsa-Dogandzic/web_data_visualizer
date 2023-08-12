@@ -79,6 +79,7 @@ def players_per_club(x, y):
     plt.figure(figsize=(10, 5))
     sns.barplot(x=x, y=y,color="dodgerblue")
     plt.xticks(rotation=90)
+    plt.xlabel(None)
     plt.tight_layout()
     graph = get_graph()
     return graph

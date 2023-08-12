@@ -1,34 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'components/base.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UCL | Klubovi</title>
-</head>
+{% block title %}
+<title>UCL | Klubovi</title>
+{% endblock title %}
 
-<body>
+{% block content %}
+
+
+<header class="header">
+    {% include 'components/nav.html' %}
+    <div class="header-info">
+        <div class="header-text">
+            <h1>Najbolji klub</h1>
+            <p>Klub koji je postigao najveći broj golova na takmičenju je <a
+                    href="/clubs/{{best_club.name}}">{{best_club.name}}</a></p>
+        </div>
+
+        <div class="club-stats">
+            <div>GOLOVI <br> <span>{{best_club.Golovi}}</span></div>
+            <div>ASISTENCIJE <br> <span>{{best_club.Asistencije}}</span></div>
+            <div>FAULOVI <br> <span>{{best_club.Broj_faulova}}</span></div>
+            <div>PENALI <br> <span>{{best_club.Penali}}</span></div>
+        </div>
+    </div>
+</header>
+
+<!--
     <h1>Najbolji klub</h1>
-
     <h2>{{best_club.name}}</h2>
     <p>Broj golova je nevjerovatnih {{ best_club.Golovi }}, a ukupan broj asistencija igraca je
         {{ best_club.Asistencije }}</p>
-    <hr>
-    <h2>Broj igraca po klubovima</h2>
+-->
+
+<div class="separator"></div>
+
+<div class="single-graph">
+    <div class="graph-info">
+        <h3>Strijelci po klubovima</h3>
+        <p>
+            Na grafiku je prikazan broj igrača koji su postigli bar jedan pogodak u Ligi šampiona
+        </p>
+    </div>
     {% if players_per_club %}
     <img src="data:image/png;base64, {{players_per_club|safe}}">
     {% endif %}
-    <hr>
-    <h2>Klubovi</h2>
-    {% for club in clubs.itertuples %}
-    <a href="/clubs/{{club.Index}}" style="margin-left: 20px;">{{club.Index}}</a>
-    {% endfor %}
-    <hr>
-    <h2>Najbolji klubovi po Golovima i asistencijama</h2>
+</div>
+
+<div class="separator"></div>
+
+<div class="clubs-list">
+    <h2>Lista klubova</h2>
+    <p>Svi klubovi koji su učestvovali u Ligi šampiona 2021/2022:</p>
+    <div class="club-list-container">
+        {% for club in clubs.itertuples %}
+        <a href="/clubs/{{club.Index}}" style="margin-left: 20px;">{{club.Index}}</a>
+        {% endfor %}
+    </div>
+</div>
+
+<div class="separator"></div>
+
+<div class="single-graph">
+    <div class="graph-info">
+        <h3>Klubovi sa najviše pogodaka</h3>
+        <p>
+            Na grafiku je prikazano 10 najboljih klubova posmatrajući samo ukupne golove i asistencije igrača.
+        </p>
+    </div>
     {% if top10_graph %}
     <img src="data:image/png;base64, {{top10_graph|safe}}">
     {% endif %}
+</div>
 
-</body>
+<div class="separator"></div>
 
-</html>
+{% include 'components/footer.html' %}
+
+{% endblock content %}
