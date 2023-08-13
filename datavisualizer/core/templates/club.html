@@ -1,30 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'components/base.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UCL | {{club.name}}</title>
-</head>
+{% block title %}
+<title>UCL | {{club.name}}</title>
+{% endblock title %}
 
-<body>
-    <h1>{{club.name}}</h1>
-    <p>Golovi {{club.Golovi}}</p>
-    <p>Asistencije {{club.Asistencije}}</p>
-    <p>Broj faulova {{club.Broj_faulova}}</p>
-    <p>Broj šuteva {{club.Šutevi}}</p>
-    <hr>
-    <h2>Grafik</h2>
-    <p>Sa sumom igraca kluba</p>
+{% block content %}
+
+<header class="header">
+    {% include 'components/nav.html' %}
+    <div class="header-info">
+        <div class="header-text">
+            <h1>{{club.name}}</h1>
+        </div>
+
+        <div class="club-stats">
+            <div>GOLOVI <br> <span>{{club.Golovi}}</span></div>
+            <div>ASISTENCIJE <br> <span>{{club.Asistencije}}</span></div>
+            <div>FAULOVI <br> <span>{{club.Broj_faulova}}</span></div>
+            <div>ŠUTEVI <br> <span>{{club.Šutevi}}</span></div>
+        </div>
+    </div>
+</header>
+
+<div class="separator"></div>
+
+<div class="single-graph">
+    <div class="graph-info">
+        <h3>Performanse kluba</h3>
+        <p>
+            Koliko i po kojim kriterijumima je {{club.name}} bolji/gori od prosječnog kluba u Ligi šampiona 2021/2022.
+            (Sa sumom igraca kluba)
+        </p>
+    </div>
     {% if graph %}
-    <img src="data:image/png;base64, {{graph|safe}}">
+    <img src="data:image/png;base64, {{graph|safe}}" alt="{{club.name}} vs average club">
     {% endif %}
-    <p>Sa prosjekom igraca kluba</p>
+</div>
+
+<div class="separator"></div>
+
+<div class="single-graph">
+    <div class="graph-info">
+        <h3>Performanse kluba</h3>
+        <p>
+            Koliko i po kojim kriterijumima je {{club.name}} bolji/gori od prosječnog kluba u Ligi šampiona 2021/2022.
+            (Sa prosjekom igraca kluba)
+        </p>
+    </div>
     {% if graph2 %}
-    <img src="data:image/png;base64, {{graph2|safe}}">
+    <img src="data:image/png;base64, {{graph2|safe}}" alt="{{club.name}} vs average club">
     {% endif %}
-    <hr>
-    <h2>Lista strijelaca</h2>
+</div>
+
+<div class="separator"></div>
+
+<div class="table-section">
+    <div class="table-info">
+        <h3>Tabela strijelaca</h2>
+            <p>U tabeli su prikazani svi strijelci kluba sa njihovim postignutim rezultatima na prvenstvu.</p>
+    </div>
     <table>
         <tr>
             <th>Igrač</th>
@@ -51,11 +85,24 @@
         </tr>
         {% endfor %}
     </table>
-    <hr>
+</div>
 
+<div class="separator"></div>
+
+<div class="single-graph">
+    <div class="graph-info">
+        <h3>Performanse igrača</h3>
+        <p>
+            Grafik vizualno pokazuje koliko je svaki pojedinačni igrač doprinio svom klubu.
+        </p>
+    </div>
     {% if best_club_players %}
-    <img src="data:image/png;base64, {{best_club_players|safe}}">
+    <img src="data:image/png;base64, {{best_club_players|safe}}" alt="{{club.name}} players">
     {% endif %}
-</body>
+</div>
 
-</html>
+<div class="separator"></div>
+
+{% include 'components/footer.html' %}
+
+{% endblock content %}

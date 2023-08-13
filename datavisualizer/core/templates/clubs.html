@@ -20,17 +20,10 @@
             <div>GOLOVI <br> <span>{{best_club.Golovi}}</span></div>
             <div>ASISTENCIJE <br> <span>{{best_club.Asistencije}}</span></div>
             <div>FAULOVI <br> <span>{{best_club.Broj_faulova}}</span></div>
-            <div>PENALI <br> <span>{{best_club.Penali}}</span></div>
+            <div>ŠUTEVI <br> <span>{{best_club.Šutevi}}</span></div>
         </div>
     </div>
 </header>
-
-<!--
-    <h1>Najbolji klub</h1>
-    <h2>{{best_club.name}}</h2>
-    <p>Broj golova je nevjerovatnih {{ best_club.Golovi }}, a ukupan broj asistencija igraca je
-        {{ best_club.Asistencije }}</p>
--->
 
 <div class="separator"></div>
 
@@ -42,7 +35,7 @@
         </p>
     </div>
     {% if players_per_club %}
-    <img src="data:image/png;base64, {{players_per_club|safe}}">
+    <img src="data:image/png;base64, {{players_per_club|safe}}" alt="players_per_club">
     {% endif %}
 </div>
 
@@ -68,7 +61,7 @@
         </p>
     </div>
     {% if top10_graph %}
-    <img src="data:image/png;base64, {{top10_graph|safe}}">
+    <img src="data:image/png;base64, {{top10_graph|safe}}" alt="top10_clubs">
     {% endif %}
 </div>
 

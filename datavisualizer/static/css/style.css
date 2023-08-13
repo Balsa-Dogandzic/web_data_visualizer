@@ -189,6 +189,62 @@ hr {
   transition: 1s;
 }
 
+/*Players table*/
+.table-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: scroll;
+}
+
+.table-section::-webkit-scrollbar {
+  display: none;
+}
+
+.table-info {
+  width: 80%;
+  line-height: 2;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.table-info h3 {
+  font-size: 2rem;
+}
+
+.table-section table {
+  min-width: 80%;
+  text-align: center;
+}
+
+.table-section table tr:hover {
+  background-color: #d8d8d8;
+}
+
+.table-section table td,
+.table-section table th {
+  width: fit-content;
+  padding: 0.5em 0.5em;
+  outline: 1px solid rgb(0, 169, 169);
+  white-space: nowrap;
+}
+
+.table-section table th {
+  background-color: rgb(0, 169, 169);
+  color: #fff;
+}
+
+.table-section table td a {
+  color: rgb(0, 169, 169);
+  transition: 1s;
+}
+
+.table-section table td a:hover,
+.table-section table td a:focus {
+  color: darkcyan;
+}
+
 /*Footer*/
 footer {
   padding: 1em 0;
@@ -218,13 +274,19 @@ footer .copyright span {
     padding: 1rem;
   }
   .graph-info h2,
-  .graph-info h3 {
-    font-size: 1.5rem;
-  }
+  .graph-info h3,
+  .table-info h3,
   .clubs-list h2 {
     font-size: 1.5rem;
   }
   .club-list-container a {
     font-size: 0.8rem;
+  }
+  .table-section {
+    align-items: start;
+  }
+  .table-section table {
+    font-size: small;
+    margin-left: 1rem;
   }
 }

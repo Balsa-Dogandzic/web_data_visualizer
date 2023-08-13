@@ -1,41 +1,59 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'components/base.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UCL | {{player_name}}</title>
-</head>
+{% block title %}
+<title>UCL | {{player_name}}</title>
+{% endblock title %}
 
-<body>
-    {% for p in player.itertuples %}
-    <h1>{{p.Igrač}}</h1>
-    <h3>{{p.Pozicija}}, {{p.Klub}}</h3>
-    <p>Golovi {{p.Golovi}}</p>
-    <p>Asistencije {{p.Asistencije}}</p>
-    <p>Broj minuta {{p.Broj_minuta}}</p>
-    <p>Broj mečeva {{p.Broj_mečeva}}</p>
-    <p>Broj faulova {{p.Broj_faulova}}</p>
-    <p>Šutevi {{p.Šutevi}}</p>
-    <p>Unutar okvira {{p.Unutar_okvira}}</p>
-    <p>Penali {{p.Penali}}</p>
-    {% endfor %}
+{% block content %}
 
-    <hr>
+<header class="header">
+    {% include 'components/nav.html' %}
+    <div class="header-info">
+        {% for p in player.itertuples %}
+        <div class="header-text">
+            <h1>{{player_name}}</h1>
+            <h3>{{p.Pozicija}}, {{p.Klub}}</h3>
+        </div>
 
-    <h2>Odstupanje igrača od prosjeka</h2>
+        <div class="club-stats">
+            <div>GOLOVI <br> <span>{{p.Golovi}}</span></div>
+            <div>ASISTENCIJE <br> <span>{{p.Asistencije}}</span></div>
+            <div>ŠUTEVI <br> <span>{{p.Šutevi}}</span></div>
+            <div>UNUTAR OKVIRA <br> <span>{{p.Unutar_okvira}}</span></div>
+            <div>BROJ MEČEVA <br> <span>{{p.Broj_mečeva}}</span></div>
+            <div>BROJ MINUTA <br> <span>{{p.Broj_minuta}}</span></div>
+            <div>FAULOVI <br> <span>{{p.Broj_faulova}}</span></div>
+            <div>PENALI <br> <span>{{p.Penali}}</span></div>
+        </div>
+        {% endfor %}
+
+    </div>
+</header>
+
+<div class="separator"></div>
+
+<div class="single-graph">
+    <div class="graph-info">
+        <h3>Odstupanje igrača od prosjeka</h3>
+        <p>
+            Koliko i po kojim kriterijumima je {{player_name}} bio bolji/gori od prosječnog igrača na prvenstvu.
+        </p>
+    </div>
     {% if performance_graph %}
-    <img src="data:image/png;base64, {{performance_graph|safe}}">
+    <img src="data:image/png;base64, {{performance_graph|safe}}" alt="{{player_name}} vs average">
     {% endif %}
+</div>
 
-    <hr>
-    {% if goal_type_chart %}
-    <img src="data:image/png;base64, {{goal_type_chart|safe}}">
-    {% endif %}
+<div class="separator"></div>
 
-    {% if goal_distance_chart %}
-    <img src="data:image/png;base64, {{goal_distance_chart|safe}}">
-    {% endif %}
-</body>
+{% if goal_type_chart %}
+<img src="data:image/png;base64, {{goal_type_chart|safe}}">
+{% endif %}
 
-</html>
+{% if goal_distance_chart %}
+<img src="data:image/png;base64, {{goal_distance_chart|safe}}">
+{% endif %}
+
+{% include 'components/footer.html' %}
+
+{% endblock content %}
