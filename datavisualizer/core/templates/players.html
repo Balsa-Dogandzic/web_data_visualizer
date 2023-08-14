@@ -1,29 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'components/base.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UCL | Igrači</title>
-</head>
+{% block title %}
+<title>UCL | Igrači</title>
+{% endblock title %}
 
-<body>
-    <h1>Najbolji igrač</h1>
-    <h2>{{best_player.Igrač}}</h2>
-    <h3>{{best_player.Pozicija}}, {{best_player.Klub}}</h3>
-    <p>Ostvario je nevjerovatnih {{best_player.Golovi}}, i {{best_player.Asistencije}} asistencija.</p>
-    <hr>
-    <h2>Najbolji strijelci</h2>
+{% block content %}
+
+<header class="header">
+    {% include 'components/nav.html' %}
+    <div class="header-info">
+        <div class="header-text">
+            <h1>Najbolji strijelac</h1>
+            <p>Igrač sa najviše pogodaka na prvenstvu je <a href="players/best_player.Igrač">{{best_player.Igrač}}</a>.
+                Pozicija {{best_player.Pozicija}} iz kluba {{best_player.Klub}}.</p>
+        </div>
+
+        <div class="club-stats">
+            <div>GOLOVI <br> <span>{{best_player.Golovi}}</span></div>
+            <div>ASISTENCIJE <br> <span>{{best_player.Asistencije}}</span></div>
+            <div>ŠUTEVI <br> <span>{{best_player.Šutevi}}</span></div>
+            <div>UNUTAR OKVIRA <br> <span>{{best_player.Unutar_okvira}}</span></div>
+            <div>BROJ MEČEVA <br> <span>{{best_player.Broj_mečeva}}</span></div>
+            <div>BROJ MINUTA <br> <span>{{best_player.Broj_minuta}}</span></div>
+            <div>FAULOVI <br> <span>{{best_player.Broj_faulova}}</span></div>
+            <div>PENALI <br> <span>{{best_player.Penali}}</span></div>
+        </div>
+
+    </div>
+</header>
+
+<div class="separator"></div>
+
+<div class="single-graph">
+    <div class="graph-info">
+        <h3>Najbolji strijelci</h3>
+        <p>
+            Na grafiku su prikazani 10 najboljih igrača prvenstva, po golovima i asistencijama kao kriterijumu.
+        </p>
+    </div>
     {% if top10_graph %}
-    <img src="data:image/png;base64, {{top10_graph|safe}}">
+    <img src="data:image/png;base64, {{top10_graph|safe}}" alt="top10_players">
     {% endif %}
-    <hr>
-    {% if positions_graph %}
-    <img src="data:image/png;base64, {{positions_graph|safe}}">
-    {% endif %}
-    {% if positions_per_club %}
-    <img src="data:image/png;base64, {{positions_per_club|safe}}">
-    {% endif %}
-</body>
+</div>
 
-</html>
+<div class="separator"></div>
+
+
+<div class="double-graph">
+    <div class="graph-container">
+        <div class="graph-info">
+            <h3>Strijelci po pozicijama</h3>
+            <p>Koliki udio ukupnog broja strijelaca zauzima koja pozicija.</p>
+        </div>
+        {% if positions_graph %}
+        <img src="data:image/png;base64, {{positions_graph|safe}}" alt="positions_graph">
+        {% endif %}
+    </div>
+    <div class="graph-positions_per_club">
+        <div class="graph-info">
+            <h3>Pozicije po klubovima</h3>
+            <p>Koliko igrača po pozicijama se nalazi u svakom od klubova prikazano je na ovom grafiku.</p>
+        </div>
+        {% if positions_per_club %}
+        <img src="data:image/png;base64, {{positions_per_club|safe}}" alt="positions_per_club">
+        {% endif %}
+    </div>
+</div>
+
+<div class="separator"></div>
+
+{% include 'components/footer.html' %}
+
+{% endblock content %}

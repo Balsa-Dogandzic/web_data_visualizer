@@ -156,6 +156,29 @@ hr {
   font-size: 2rem;
 }
 
+/*Double graph section*/
+.double-graph {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.graph-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.graph-container img {
+  width: 100%;
+}
+
 /*Clubs list section*/
 .clubs-list {
   background-color: darkcyan;
@@ -288,5 +311,8 @@ footer .copyright span {
   .table-section table {
     font-size: small;
     margin-left: 1rem;
+  }
+  .double-graph {
+    grid-template-columns: 1fr;
   }
 }

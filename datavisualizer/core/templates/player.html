@@ -46,13 +46,29 @@
 
 <div class="separator"></div>
 
-{% if goal_type_chart %}
-<img src="data:image/png;base64, {{goal_type_chart|safe}}">
-{% endif %}
+<div class="double-graph">
+    <div class="graph-container">
+        <div class="graph-info">
+            <h3>Distribucija golova</h3>
+            <p>Koliko je {{player_name}} dao golova desnom, a koliko lijevom nogom. Koliko ih je dao glavom, a koliko na
+                neki drugi način.</p>
+        </div>
+        {% if goal_type_chart %}
+        <img src="data:image/png;base64, {{goal_type_chart|safe}}" alt="goal_distribution">
+        {% endif %}
+    </div>
+    <div class="graph-container">
+        <div class="graph-info">
+            <h3>Daljina pogotka</h3>
+            <p>Koliko golova je {{player_name}} dao unutar šesnaesterca, a koliko van njega.</p>
+        </div>
+        {% if goal_distance_chart %}
+        <img src="data:image/png;base64, {{goal_distance_chart|safe}}" alt="goal_distance">
+        {% endif %}
+    </div>
+</div>
 
-{% if goal_distance_chart %}
-<img src="data:image/png;base64, {{goal_distance_chart|safe}}">
-{% endif %}
+<div class="separator"></div>
 
 {% include 'components/footer.html' %}
 
