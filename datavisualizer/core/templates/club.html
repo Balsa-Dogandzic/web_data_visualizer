@@ -59,32 +59,34 @@
         <h3>Tabela strijelaca</h2>
             <p>U tabeli su prikazani svi strijelci kluba sa njihovim postignutim rezultatima na prvenstvu.</p>
     </div>
-    <table>
-        <tr>
-            <th>Igrač</th>
-            <th>Pozicija</th>
-            <th>Broj minuta</th>
-            <th>Broj mečeva</th>
-            <th>Golovi</th>
-            <th>Asistencije</th>
-            <th>Broj faulova</th>
-            <th>Broj šuteva</th>
-            <th></th>
-        </tr>
-        {% for player in players.itertuples %}
-        <tr>
-            <td>{{ player.Igrač }}</td>
-            <td>{{ player.Pozicija }}</td>
-            <td>{{ player.Broj_minuta }}</td>
-            <td>{{ player.Broj_mečeva }}</td>
-            <td>{{ player.Golovi }}</td>
-            <td>{{ player.Asistencije }}</td>
-            <td>{{ player.Broj_faulova }}</td>
-            <td>{{ player.Šutevi }}</td>
-            <td><a href="/players/{{player.Igrač}}">Saznaj više</a></td>
-        </tr>
-        {% endfor %}
-    </table>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>Igrač</th>
+                <th>Pozicija</th>
+                <th>Broj minuta</th>
+                <th>Broj mečeva</th>
+                <th>Golovi</th>
+                <th>Asistencije</th>
+                <th>Broj faulova</th>
+                <th>Broj šuteva</th>
+                <th></th>
+            </tr>
+            {% for player in players.itertuples %}
+            <tr>
+                <td>{{ player.Igrač }}</td>
+                <td>{{ player.Pozicija }}</td>
+                <td>{{ player.Broj_minuta }}</td>
+                <td>{{ player.Broj_mečeva }}</td>
+                <td>{{ player.Golovi }}</td>
+                <td>{{ player.Asistencije }}</td>
+                <td>{{ player.Broj_faulova }}</td>
+                <td>{{ player.Šutevi }}</td>
+                <td><a href="/players/{{player.Igrač}}">Saznaj više</a></td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
 </div>
 
 <div class="separator"></div>

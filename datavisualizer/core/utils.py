@@ -36,7 +36,7 @@ def two_bar_chart(x, y, z):
 
 def horizontal_barchart(x, y, z):
     plt.switch_backend("AGG")
-    plt.figure(figsize=(10, 5))
+    plt.figure(figsize=(12, 6))
     y_axis = np.arange(len(y))
     plt.barh(y_axis - 0.2, x, 0.4, label='Golovi')
     plt.barh(y_axis + 0.2, z, 0.4, label='Asistencije')
@@ -48,7 +48,7 @@ def horizontal_barchart(x, y, z):
 
 def performance_check(x, y, z, name):
     plt.switch_backend("AGG")
-    plt.figure(figsize = (10, 5))
+    plt.figure(figsize = (12, 6))
     plt.plot(x, y, label=name)
     plt.plot(x, z, label="Prosjek")
     plt.legend()
@@ -56,7 +56,7 @@ def performance_check(x, y, z, name):
     graph = get_graph()
     return graph
 
-def get_pie_chart(x, labels):
+def pie_chart(x, labels):
     plt.switch_backend("AGG")
     plt.pie(x, labels=["" for i in range(len(labels))], autopct='%.1f%%')
     plt.legend(labels, loc='upper right')
@@ -70,6 +70,7 @@ def positions_per_club(data):
     sns.catplot(hue = 'Pozicija', y = 'Klub',kind = 'count', data = data, legend_out=False)
     plt.legend(loc='lower right')
     plt.xlabel("Broj igrača")
+    plt.ylabel(None)
     plt.tight_layout()
     graph = get_graph()
     return graph

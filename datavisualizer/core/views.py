@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .utils import (one_bar_chart, two_bar_chart, performance_check, get_pie_chart, 
+from .utils import (one_bar_chart, two_bar_chart, performance_check, pie_chart, 
                     positions_per_club, players_per_club, horizontal_barchart)
 import pandas as pd
 
@@ -64,7 +64,6 @@ def club(request, club):
 
     df_mean = df[['Broj_mečeva', 'Golovi', 'Asistencije', 'Broj_faulova', 'Šutevi']].mean()
     club_mean = players[['Broj_mečeva', 'Golovi', 'Asistencije', 'Broj_faulova', 'Šutevi']].mean()
-    x = club_mean.index
     y = club_mean
     z = df_mean
     graph2 = performance_check(x, y, z, club)
@@ -95,7 +94,7 @@ def players(request):
     top10_graph = two_bar_chart(x, y, z)
 
     position_counts = df.value_counts("Pozicija")
-    positions_graph = get_pie_chart(position_counts, position_counts.index)
+    positions_graph = pie_chart(position_counts, position_counts.index)
 
     positions_p_club = positions_per_club(df)
 
@@ -116,16 +115,18 @@ def player(request, player):
         return render(request, "error_pages/404.html")
     players_mean = df[['Broj_mečeva', 'Golovi', 'Asistencije', 'Broj_faulova', 'Šutevi']].mean()
 
-    x = players_mean.index
+    x = ['Broj mečeva', 'Golovi', 'Asistencije', 'Broj faulova', 'Šutevi']
     y = player_data[['Broj_mečeva', 'Golovi', 'Asistencije', 'Broj_faulova', 'Šutevi']].values[0]
     z = players_mean
     performance_graph = performance_check(x, y, z, player)
 
     x = player_data[['Golovi_desnom', 'Golovi_lijevom', 'Golovi_glavom', 'Drugačiji_golovi']]
-    goal_type_chart = get_pie_chart(x.values[0], x.columns)
+    labels = ['Golovi desnom', 'Golovi lijevom', 'Golovi glavom', 'Drugačiji golovi']
+    goal_type_chart = pie_chart(x.values[0], labels)
 
     x = player_data[['Iz_šesnaesterca', 'Van_šesnaesterca']]
-    goal_distance_chart = get_pie_chart(x.values[0], x.columns)
+    labels = ['Iz šesnaesterca', 'Van šesnaesterca']
+    goal_distance_chart = pie_chart(x.values[0], labels)
 
     return render(request, 'player.html', {
         'player_name':player,

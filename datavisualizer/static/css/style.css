@@ -218,10 +218,9 @@ hr {
   display: flex;
   align-items: center;
   flex-direction: column;
-  overflow-x: scroll;
 }
 
-.table-section::-webkit-scrollbar {
+.table-container::-webkit-scrollbar {
   display: none;
 }
 
@@ -236,8 +235,13 @@ hr {
   font-size: 2rem;
 }
 
+.table-container {
+  width: 80%;
+  overflow-x: scroll;
+}
+
 .table-section table {
-  min-width: 80%;
+  min-width: 100%;
   text-align: center;
 }
 
@@ -310,7 +314,10 @@ footer .copyright span {
   }
   .table-section table {
     font-size: small;
-    margin-left: 1rem;
+    margin: 0 1rem;
+  }
+  .table-container {
+    width: 100%;
   }
   .double-graph {
     grid-template-columns: 1fr;

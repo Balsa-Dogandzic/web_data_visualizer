@@ -33,10 +33,3 @@ U nastavku su screenshot-ovi web sajta:
 ![alt text](https://github.com/Balsa-Dogandzic/web_data_visualizer/blob/main/docs/Igraci.png?raw=True)
 
 ![alt text](https://github.com/Balsa-Dogandzic/web_data_visualizer/blob/main/docs/Igrac.png?raw=True)
-
-### TODO
-
-1. Još analize u notebook-u?
-2. Dodati nove kolone u dataset-u (ocjena, golovi po meču itd.)
-3. Pronaći još literature
-4. Refraktorisati kod
