@@ -64,3 +64,9 @@ Link: https://joss.theoj.org/papers/10.21105/joss.03021.pdf
 Komparativna analiza Matplotlib i Seaborn:
 Sial, A. H., Rashdi, S. Y. S., & Khan, A. H. (2021). Comparative analysis of data visualization libraries Matplotlib and Seaborn in Python. International Journal, 10(1).
 Link: https://d1wqtxts1xzle7.cloudfront.net/65736020/ijatcse391012021-libre.pdf?1613836209=&response-content-disposition=inline%3B+filename%3DComparative_Analysis_of_Data_Visualizati.pdf&Expires=1691055330&Signature=a3W1HeF5ipJKB57-TvmGz~5VPhNh~obZf0jEC~yJowQQYEzrunIYLPytb9j83EYMOsG-M8jqnpyCNA45sSdxGLhIIH8sX27o3l-LOCp9TM9wO6HQYVuyuLz5h52qhWHXnMKaILTNUzGyDsa77s5dzrmC6RcQ9QV8YFaQExr-FU6FZVttByWbXpmWGybdR0rghZns1Hzk0sFSWZygphtDa9TXViDugGRTi1zrh5WjMJVHNJqyO2O~6s1AbpUQiyOltCxSX~bhdUbOLArUKMZzhKNN6G2uxSDTFa37osi7QT0hHtiX5hiU9KH15sfLToq4IjGJ9eC-6Cy-b4S6yQIiKA__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA
+
+Gholizadeh, S. (2022). Top Popular Python Libraries in Research. Authorea Preprints.
+
+McKinney, W. (2010, June). Data structures for statistical computing in python. In Proceedings of the 9th Python in Science Conference.
+
+McKinney, W. (2012). Python for data analysis: Data wrangling with Pandas, NumPy, and IPython. " O'Reilly Media, Inc.".
