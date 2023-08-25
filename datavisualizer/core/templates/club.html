@@ -29,26 +29,10 @@
         <h3>Performanse kluba</h3>
         <p>
             Koliko i po kojim kriterijumima je {{club.name}} bolji/gori od prosječnog kluba u Ligi šampiona 2021/2022.
-            (Sa sumom igraca kluba)
         </p>
     </div>
-    {% if graph %}
-    <img src="data:image/png;base64, {{graph|safe}}" alt="{{club.name}} vs average club">
-    {% endif %}
-</div>
-
-<div class="separator"></div>
-
-<div class="single-graph">
-    <div class="graph-info">
-        <h3>Performanse kluba</h3>
-        <p>
-            Koliko i po kojim kriterijumima je {{club.name}} bolji/gori od prosječnog kluba u Ligi šampiona 2021/2022.
-            (Sa prosjekom igraca kluba)
-        </p>
-    </div>
-    {% if graph2 %}
-    <img src="data:image/png;base64, {{graph2|safe}}" alt="{{club.name}} vs average club">
+    {% if perofrmance_graph %}
+    <img src="data:image/png;base64, {{perofrmance_graph|safe}}" alt="{{club.name}} vs average club">
     {% endif %}
 </div>
 

@@ -1,6 +1,5 @@
 from django.shortcuts import render
-from .utils import (one_bar_chart, two_bar_chart, performance_check, pie_chart, 
-                    positions_per_club, players_per_club, horizontal_barchart)
+from .utils import *
 import pandas as pd
 
 
@@ -54,19 +53,15 @@ def club(request, club):
         club_data = all_clubs.loc[club]
     except:
         return render(request, "error_pages/404.html")
-    clubs_mean = all_clubs[['Broj_mečeva', 'Golovi', 'Asistencije', 'Broj_faulova', 'Šutevi']].mean()
     players = df[df["Klub"] == club]
 
-    x = ['Broj mečeva', 'Golovi', 'Asistencije', 'Broj faulova', 'Šutevi']
-    y = club_data[['Broj_mečeva', 'Golovi', 'Asistencije', 'Broj_faulova', 'Šutevi']]
-    z = clubs_mean
-    graph = performance_check(x, y, z, club)
 
     df_mean = df[['Broj_mečeva', 'Golovi', 'Asistencije', 'Broj_faulova', 'Šutevi']].mean()
     club_mean = players[['Broj_mečeva', 'Golovi', 'Asistencije', 'Broj_faulova', 'Šutevi']].mean()
+    x = ['Broj mečeva', 'Golovi', 'Asistencije', 'Broj faulova', 'Šutevi']
     y = club_mean
     z = df_mean
-    graph2 = performance_check(x, y, z, club)
+    perofrmance_graph = performance_check(x, y, z, club)
 
     x = players['Golovi']
     y = players['Igrač']
@@ -75,9 +70,8 @@ def club(request, club):
 
     return render(request, 'club.html', {
         'club':club_data, 
-        'players':players, 
-        'graph':graph,
-        'graph2':graph2,
+        'players':players,
+        'perofrmance_graph':perofrmance_graph,
         'best_club_players': best_club_players
     })
 
