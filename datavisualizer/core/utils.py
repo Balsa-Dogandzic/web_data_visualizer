@@ -15,6 +15,7 @@ def get_graph():
     return graph
 
 def one_bar_chart(x, y):
+    plt.rcdefaults()
     plt.switch_backend("AGG")
     plt.figure(figsize = (12, 5))
     plt.grid(True, alpha=0.5, zorder=0)
@@ -26,6 +27,7 @@ def one_bar_chart(x, y):
     return graph
 
 def two_bar_chart(x, y, z):
+    plt.rcdefaults()
     plt.switch_backend("AGG")
     plt.figure(figsize = (12, 5))
     x_axis = np.arange(len(x))
@@ -41,6 +43,7 @@ def two_bar_chart(x, y, z):
     return graph
 
 def horizontal_barchart(x, y, z):
+    plt.rcdefaults()
     plt.switch_backend("AGG")
     plt.figure(figsize=(12, 6))
     y_axis = np.arange(len(y))
@@ -57,27 +60,38 @@ def horizontal_barchart(x, y, z):
     return graph
 
 def performance_check(x, y, z, name):
+    plt.rcdefaults()
     plt.switch_backend("AGG")
     plt.figure(figsize = (12, 6))
-    plt.plot(x, y, label=name)
-    plt.plot(x, z, label="Prosjek")
-    plt.legend()
+    plt.grid(True, linestyle='--', alpha=0.5, zorder=0)
+    plt.plot(x, y, label=name, color='#008b8b', linewidth=2, marker='o', markersize=5, zorder=3)
+    plt.plot(x, z, label="Prosjek", color='#8B0000', linewidth=2, marker='o', markersize=5, zorder=3)
+    legend = plt.legend()
+    legend_text = legend.get_texts()
+    plt.setp(legend_text, fontname='Calibri', fontsize=14, fontweight='bold')
     plt.tight_layout()
     graph = get_graph()
     return graph
 
 def pie_chart(x, labels):
+    plt.rcdefaults()
     plt.switch_backend("AGG")
-    plt.pie(x, labels=["" for i in range(len(labels))], autopct='%.1f%%')
-    plt.legend(labels, loc='upper right')
+    colors = ['#008B8B', '#95F7B1', '#5DBE7C', '#20884B']
+    plt.pie(x, labels=["" for i in range(len(labels))], autopct='%.1f%%', colors=colors[0:len(labels)], explode=[0.01 for i in range(len(labels))])
+    legend = plt.legend(labels, loc='upper right')
+    legend_text = legend.get_texts()
+    plt.setp(legend_text, fontname='Calibri', fontsize=13, fontweight='bold')
+    plt.axis('equal')
     plt.tight_layout()
     graph = get_graph()
     return graph
 
 def positions_per_club(data):
+    plt.rcdefaults()
     plt.switch_backend("AGG")
     plt.figure(figsize=(10, 10))
-    sns.catplot(hue = 'Pozicija', y = 'Klub', kind='count', data = data, legend_out=False)
+    palette = ['#008B8B', '#5DBE7C', '#20884B']
+    sns.catplot(hue = 'Pozicija', y = 'Klub', kind='count', data = data, legend_out=False, palette=palette)
     plt.legend(loc='lower right')
     plt.xlabel("Broj igrača")
     plt.ylabel(None)
@@ -86,10 +100,10 @@ def positions_per_club(data):
     return graph
 
 def players_per_club(x, y):
+    plt.rcdefaults()
     plt.switch_backend("AGG")
     plt.figure(figsize=(10, 5))
     sns.barplot(x=x, y=y, color='#008b8b')
-    sns.set_style('whitegrid')
     plt.xticks(rotation=90, fontsize='12', fontfamily='calibri')
     plt.yticks(fontsize='12', fontfamily='calibri')
     plt.xlabel(None)
